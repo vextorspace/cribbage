@@ -1,10 +1,43 @@
 # ICA canon — single source of truth
 
 This site is an in-universe artifact of an existing running joke among friends. The source
-material is in `evidence/` (gitignored — emails and a WhatsApp chat between Alicia Lake,
-Tony Cullen, Douglas Ronne, and others, with Patrick "Pat" Thornenberg as the NCCWL's
-fictional Chairman). All site copy must be consistent with that material. When in doubt,
-consult `evidence/` before inventing new lore.
+material is in `evidence/` (gitignored — emails and a WhatsApp chat). All site copy must be
+consistent with that material. When in doubt, consult `evidence/` before inventing new lore.
+
+## Who is real vs. fictional
+
+**Real people** (friends of the user, in on the joke):
+- **Alicia Lake** — real
+- **Tony Cullen** — real
+- **Michelle Cullen** — real (Tony's wife)
+- **Douglas Ronne** — real (the user)
+- **Tim** — real
+- **Katrina** — real
+
+**Fictional characters** (invented as part of the joke — can be written freely):
+- **Patrick "Pat" Thornenberg** — fictional NCCWL Chairman / ICA Executive Director
+- **Bart** — fictional disgraced former Executive Director
+- **Sug** — fictional gangster
+- Any other officials, board members, tribunal panelists, opposing players, etc. that
+  we invent for the site (e.g. national-federation chairs, sector secretaries)
+
+## Important constraint: no insults to Michelle, Katrina, or Tim
+
+**Michelle Cullen, Katrina, and Tim are off-limits for any unflattering portrayal.**
+They appear in the site as dignified, sympathetic figures:
+
+- **Michelle Cullen** — the long-suffering wife who endures Tony's antics with grace.
+  Founder/director of the Uganda Cheer Camps initiative. A genuinely admirable
+  administrator within the ICA. Any humor involving her should be at Tony's expense
+  (her enduring something Tony did), never at hers.
+- **Katrina** — generous donor / patron (gifted Douglas the noteworthy crib board).
+  Treat with full respect; she should appear as a benefactress of the Association.
+- **Tim** — earnest, dedicated officer of the Association. The "born without tear ducts"
+  detail from the evidence is canonical lore but is presented as a remarkable medical
+  fact, not a defect. He is competent and respected.
+
+The fall-from-grace storyline (see below) applies only to **Tony and Alicia** (and the
+fictional Bart and Pat). Michelle, Katrina, and Tim remain unimpeachable throughout.
 
 ## Organizational identity
 
@@ -144,21 +177,114 @@ events (Ukraine war, post-COVID era) to underscore the stakes of cribbage miscon
 Per chat: gifted Douglas a crib board "where the pegs go" somewhere notable. Possibly the
 same Tim as above; possibly a different Tim. Make a call when writing the donor wall.
 
-### Bart — disgraced former Executive Director
+### Bart — disgraced former Executive Director (fictional)
 
-**Handle with extreme caution.** The evidence characterizes "Bart" as having been terminated
-for misconduct involving young women and "prestigious awards in return for 'favors'." Bart
-appears to be a real person whom the friend group jokingly characterized this way in private
-correspondence.
+Bart is a fictional character invented as part of the running joke. Use the original
+characterization from the evidence: terminated for "giving various young women prestigious
+awards in return for 'favors'." All awards he ever issued have been revoked and remain
+under permanent Tribunal review. The site's tone treats this as a sober institutional
+embarrassment — wire-service phrasing, never gleeful.
 
-**Publishing this characterization on a public website carries real defamation risk** even
-in a satire context — especially if any reader could identify the real Bart. Recommended:
+Full name: invent — suggest **Bartholomew "Bart" Crumthwaite-Halloran**, Executive
+Director 1998–2008.
 
-- **Default:** drop Bart entirely from the site, or refer only obliquely
-  ("a previous Executive Director resigned in 2008 amid administrative irregularities")
-- **If user insists:** rename the character so they cannot be identified, drop the sexual
-  misconduct framing, and substitute a milder offense ("revoked for awarding medals to
-  unsanctioned tournaments"). Confirm this explicitly before writing.
+## The Equine Scandal — Tony and Alicia's rise and fall
+
+The narrative spine of the news section. Tony Cullen and Alicia Lake rise to the very top
+of the Association — Masters level, Champion of Champions, Order of Canada, Hall of
+Champion portraits, multi-billion-dollar sponsorships — and then fall in a scandal
+involving horses.
+
+### The premise (write this completely straight)
+
+For years, Alicia Lake was celebrated for her **Double Lotus Shuffle**, including the
+storied incident in which she revived a dead horse by performing the shuffle on its
+hindquarter. ICA institutional history canonized this as a miraculous demonstration of
+the shuffle's power. **The Tribunal now alleges that the horse was not dead by natural
+causes** — that Tony Cullen had, "allegedly" (his word, repeatedly), kicked the horse
+prior to its revival, and that the entire "revival" was a staged exhibition.
+
+Subsequent investigation has uncovered a years-long pattern of:
+
+1. **Equine cribbage exploitation.** Tony and Alicia, in unsanctioned events, compelled
+   horses to play cribbage against them. Tribunal experts have established that horses
+   possess **a confirmed and irreducible numerical ceiling of three**, making it
+   impossible for any equine participant to:
+   - Correctly count the standard 15-2, 15-4 progressions
+   - Pronounce the count of 31 at the conclusion of the play phase (the linguistic
+     challenge being separately documented; see veterinary linguistics literature)
+   - Accurately tally a hand exceeding three points
+   The events were therefore not competitive matches but exhibitions of human players
+   playing against opponents with no possible path to victory. Sanctioned wins logged
+   against equine opponents are being expunged from both players' records.
+
+2. **The kicking allegations.** Witnesses (including the WICC's own field observers)
+   have submitted sworn statements that Mr. Cullen administered direct kicks to multiple
+   horses in the period 2019–2024. Mr. Cullen has consistently used the qualifier
+   *"allegedly"* in his own correspondence regarding these incidents (a usage the
+   Tribunal has taken note of).
+
+3. **The "revival" fraud.** Ms. Lake's celebrated dead-horse revival now appears to have
+   been a coordinated exhibition: the horse, kicked into unconsciousness by Mr. Cullen,
+   was then revived by Ms. Lake's shuffle in front of paying spectators. Tribunal counsel
+   has filed for the rescission of the Double Lotus Shuffle's sanctioned status as
+   a "technique of historical importance."
+
+### The institutional response
+
+- The ICA Tribunal has opened a formal proceeding (case **ICA-T-2026-014**)
+- Both players have been provisionally suspended from sanctioned play
+- The IWCCA has voted to remove Mr. Cullen's commissioned portrait from the
+  Hall of Champion (a tarpaulin currently covers it pending the final ruling)
+- The Lake portrait depicting her in a (figurative) divine pose has been moved to
+  the secretariat's basement archive
+- Multiple sponsors, including Bicycle brand cards, are reportedly reviewing their
+  endorsement arrangements
+- Mr. Cullen's "exit strategy from the cribbage stronghold" (his words) is now understood
+  by many in the Association to have been an attempted preemptive withdrawal in
+  anticipation of the proceedings
+- Michelle Cullen has issued no public statement; the secretariat reports she continues
+  her Uganda Cheer Camps work undeterred and is regarded throughout the Association
+  with the highest respect
+
+### The Ronne footnote
+
+Throughout every story in the scandal arc and the preceding rise, **D. Ronne (Pi Level,
+3.14)** is mentioned only as an asterisk: still unrated above the pi level despite
+years of mentorship by the now-disgraced pair, his career advancement permanently
+stalled. Each story should find an excuse to note this — a sentence near the bottom
+of the wire copy, in the spirit of "Mr. Ronne remains the lowest-ranked individual
+ever inducted into the Association and has not progressed since his 2025 designation."
+
+### Story arc structure for the news section
+
+Order the news stories oldest-first to read chronologically as a rise and fall:
+
+**Rise (2024–early 2025):**
+1. "Cullen and Lake Elevated to Masters Level Following Sector Vote in Dubai"
+2. "Ronne Inducted at Pi Level; Helicopter Ceremony Frustrated by Inductee Absence"
+3. "Hall of Champion Commissions Cullen Portrait"
+4. "Lake Wins Washington State Finals With Perfect 29"
+5. "Cullen Initiative Repurposes Retired Cribbage Boards as Tiny Homes in Uganda"
+6. "Tribunal Examines Alleged RCMP Misconduct Following Lake–Trudeau Championship Final"
+7. "International Tarbish Tournament To Honour Lake as Guest"
+
+**Cracks (mid-2025):**
+8. "Cullen Skunk Rate Slips Below 80%; Secretariat Denies Concern"
+9. "Cullen Announces 'Exit Strategy from the Cribbage Stronghold'; Reaches Africa"
+
+**Fall (late 2025–2026):**
+10. "ICA Tribunal Opens Inquiry Into Equine Participation in Sanctioned Play"
+11. "Witnesses Testify to Pattern of Equine Cribbage Exhibitions; Veterinary Linguist
+    Confirms Horses Cannot Pronounce 'Thirty-One'"
+12. "Lake's Dead-Horse Revival Now Believed Staged; Cullen Allegedly Administered Kicks"
+13. "Cullen Portrait Tarpaulined in Hall of Champion; Lake Painting Relocated to Archive"
+14. "Bicycle Brand Cards Suspends Lake Sponsorship Pending Tribunal Outcome"
+15. "Executive Director Thornenberg: 'STOP, CEASE, DESIST'; Provisional Suspensions Issued"
+16. "Michelle Cullen Continues Uganda Cheer Camps; Declines Comment"
+
+The site's "Latest News" should foreground the scandal stories; the rise stories sit in
+the archive for readers who scroll back. Doug should remain Pi Level throughout.
 
 ## Recurring lore / inside jokes to weave through the site
 

@@ -28,36 +28,29 @@ Sections to cover:
 
 ## News stories
 
-Tone reference: dry wire-service copy (Reuters/AP), not satire that announces itself. Drawn
-from the actual evidence; see [canon.md](canon.md) for the underlying source.
+Tone reference: dry wire-service copy (Reuters/AP), not satire that announces itself. The
+narrative spine is **Tony and Alicia's rise to the top of the Association followed by their
+fall in the Equine Scandal** — see the full arc and 16-story list in
+[canon.md → The Equine Scandal](canon.md).
 
-Initial batch (6–10 stories, dated within the last 18 months):
+Each story is its own template under `templates/cribbage/news/<slug>.html`, ~250–400 words,
+written as straight wire copy. The listing on `/news/` shows the scandal stories at the
+top; the rise stories sit below and in archive view.
 
-- **"Cullen and Lake Elevated to Masters Level Following Sector Vote in Dubai"** —
-  the inciting "promotion" from the evidence; covers Douglas Ronne's pi-level induction
-- **"Helicopter Awards Delivery Mission Frustrated by Absentee Inductees; ICA Renews
-  Push for Universal Chip-Implant Standard"** — Pat and Tim's hotel mission
-- **"Executive Director Thornenberg Issues Statement Following Tournament Misconduct
-  by D. Ronne; Tribunal Review Underway"** — the cease-and-desist email
-- **"Lake Wins Washington State Finals With Perfect 29; Cites Bicycle Brand Cards
-  Sponsorship"** — recent on-the-ice victory
-- **"Cullen Initiative Repurposes Retired Cribbage Boards as Tiny Homes in Uganda;
-  Michelle Cullen Launches Parallel Cheer Camp Program"** — the Uganda program
-- **"Tribunal Examines Allegations of RCMP Misconduct at Canadian Championship Finals
-  Following Lake-Trudeau Match"** — the Trudeau / political refugee storyline
-- **"Hall of Champion Commissions Cullen Portrait; Artist Cites 'Centuries-Old Brushwork
-  Tradition'"** — Tony's portrait
-- **"Officer Tim, Born Without Tear Ducts, Moved To Tears by Cullen Correspondence;
-  Confirmed as 'Truly a Miracle' by Secretariat"** — Tim's tears
-- **"International Tarbish Tournament To Honour Lake as Guest; ICA Sends Observer"** —
-  the Seattle tarbish event
-- **"NCCWL Chair Thornenberg Reflects on 25 Years of Sanctioned Play; New Sanctioned-Wins
-  Database Goes Live"** — Pat retrospective
+Voice notes when quoting:
+- **Pat Thornenberg** — escalating-synonym lists ("STOP, CEASE, DESIST, DISCONTINUE…"),
+  invocations of "the small children" and global stakes, citations of fictional bylaw
+  subsections (e.g. "section 16.174.22.3, paragraph 14.d")
+- **Alicia Lake** — grandiose claims wrapped in performative humility, frequent appeals to
+  "all of humanity" and "the small children that look up to" the top players
+- **Tony Cullen** — apparent humility while actually self-aggrandizing; deploys
+  *"allegedly"* as a load-bearing word in any reference to the kicking incidents
+- **Michelle Cullen** — never speaks in the press; the wire copy notes only that she
+  "declined to comment" and continues her Uganda work
+- **Bystanders / wire correspondents** — neutral, sober, professional
 
-Each story should be ~250–400 words, written as straight wire copy. Quote Pat, Tony, or
-Alicia using language consistent with the evidence (e.g. Pat's escalating-synonym lists,
-Alicia's invocations of "the small children" and "all of humanity," Tony's grandiose
-self-assessments delivered with apparent humility).
+Every story ends with the **Ronne footnote**: a single sentence noting that Mr. Ronne
+(Pi Level, 3.14) remains the lowest-ranked individual ever inducted and has not progressed.
 
 ## Recurring fake-org elements
 

@@ -61,10 +61,16 @@ Key facts:
 - Motto: ***Quindecim duo*** — "fifteen, two"
 - Sign-offs: *"Yours in cribbage,"* / *"Cribbage is life."*
 
-**Sensitivities** (full detail in canon.md):
+**Narrative spine:** Tony Cullen and Alicia Lake's rise to the top of the Association followed
+by their fall in the **Equine Scandal** — kicking dead horses and forcing horses (who can't
+count past 3 or pronounce "31") to play sanctioned cribbage. Pat and Bart are fictional;
+Tony, Alicia, and Doug are the real friends in on it.
+
+**Constraints** (full detail in canon.md):
+- **Michelle Cullen, Katrina, and Tim are off-limits for any unflattering portrayal.**
+  Michelle is the long-suffering wife enduring Tony's antics with grace; Katrina is a
+  respected benefactress; Tim is an earnest, competent officer.
 - Do not publish real email addresses, real street addresses, or real photos without consent
-- The "Bart" storyline (sexual-misconduct framing of a real person) defaults to dropped or
-  heavily rewritten — confirm before including
 
 ## Key principles
 
