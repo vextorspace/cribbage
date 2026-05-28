@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Django
+*.sqlite3
+staticfiles/
+.env
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Claude Code local settings
+.claude/
+
+# Source material (mined for content, not for publication)
+evidence/
+
+# OS
+.DS_Store
