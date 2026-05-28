@@ -54,21 +54,52 @@ reveal the source platform and the friend-group's group chat. **Only copy rename
 captioned versions into `cribbage/static/`.** Never link to or reference the raw
 `evidence/` paths in any committed code.
 
-## Asset gaps (need to source separately)
+## Asset gaps (to generate via ChatGPT/Midjourney/etc. and drop into static/)
 
-- **Pat Thornenberg portrait** — Pat is fictional, no source image exists. Generate
-  a dignified AI portrait of a middle-aged-male federation administrator, suit-and-tie,
-  serious expression, slightly bureaucratic
-- **Bart portrait** — likewise fictional. Generate an older male portrait, official
-  dress, perhaps shown removed from a wall (a faint outline where the frame hung)
-- **Michelle Cullen portrait** — real person; needs her consent before any photo or
-  AI likeness goes on the site. If consent isn't available, **omit her photo entirely**
-  and use a respectful placeholder (e.g. a silhouette with caption "Director of Special
-  Programs; no portrait available")
-- **Tim portrait** — same consent issue; same fallback
-- **Katrina portrait** — same consent issue; same fallback
-- **Doug Ronne portrait** — the user himself; he can provide one or we generate one
-- **ICA crest / logo** — needs to be designed from scratch (see design.md)
-- **Suckling House (The Hague HQ)** — needs an exterior photo or AI-generated rendering
-  of a dignified Lange Voorhout building
-- **Generic news thumbnails** — committee meetings, gavels, tournament halls, etc.
+### Pat Thornenberg — Executive Director (androgynous)
+
+Pat is fictional and deliberately androgynous — viewers should be unable to tell whether
+this is Patrick or Patricia. Filename target: `static/cribbage/images/thornenberg-official-portrait.jpg`
+
+**Suggested prompt:** *"A dignified official portrait, oil-painting style, of an
+androgynous middle-aged person of indeterminate gender, neat short-to-medium brown hair,
+wearing a charcoal suit jacket with a dark cravat, seated at a polished wooden desk with
+an antique cribbage board visible at the edge of the frame, sober and slightly weary
+expression, soft warm lighting, dark green velvet curtain backdrop, in the style of a
+European federation's official headshot, formal and ambiguous, gender ambiguous,
+no makeup, no obviously feminine or masculine features."*
+
+The face should genuinely be ambiguous. If a first generation reads as too clearly
+masculine or feminine, regenerate. The joke depends on the ambiguity holding.
+
+### Bart Crumthwaite-Halloran — disgraced former Executive Director (fictional)
+
+Filename target: `static/cribbage/images/crumthwaite-halloran-portrait-removed.jpg`
+
+**Suggested prompt:** *"An empty rectangular outline on a dark green wood-paneled wall
+where an oil portrait has clearly been removed — slightly lighter discoloration where the
+frame sat, a small engraved brass nameplate beneath reading 'B. Crumthwaite-Halloran,
+Executive Director 1998–2008', dim institutional lighting, hallway of a formal building."*
+
+(Alternative: an actual portrait of a fictional older man in formal academic regalia,
+slightly shifty expression. The "removed from wall" version is funnier and avoids
+needing an actual face.)
+
+### Real-person portraits
+
+- **Doug Ronne** — Doug provides his own headshot, or we generate a dignified one
+- **Michelle Cullen / Katrina / Tim** — default to a respectful silhouette placeholder
+  with their title and a caption like *"Portrait not on file at time of publication."*
+  Use a generic Director-Of-Programs-style silhouette graphic, identical for all three,
+  to make their absence look like an institutional choice rather than an omission
+- **Alicia Lake & Tony Cullen** — already covered by the WhatsApp joke art (they sent
+  it into the chat themselves)
+
+### Other assets
+
+- **ICA crest / logo** — designed from scratch (heraldic shield with crossed pegs and
+  six-card hand; see design.md)
+- **Suckling House (The Hague HQ exterior)** — AI-generated rendering of a dignified
+  Lange Voorhout building, brick or stone façade, brass plaque visible
+- **Generic news thumbnails** — committee meetings, gavels, tournament halls, helicopter
+  on a hotel lawn (for the helicopter-awards story), Tribunal chamber, etc.

@@ -15,7 +15,8 @@ consistent with that material. When in doubt, consult `evidence/` before inventi
 - **Katrina** — real
 
 **Fictional characters** (invented as part of the joke — can be written freely):
-- **Patrick "Pat" Thornenberg** — fictional NCCWL Chairman / ICA Executive Director
+- **Pat Thornenberg** — fictional NCCWL Chairman / ICA Executive Director;
+  deliberately androgynous (Patrick or Patricia, never resolved)
 - **Bart** — fictional disgraced former Executive Director
 - **Sug** — fictional gangster
 - Any other officials, board members, tribunal panelists, opposing players, etc. that
@@ -103,11 +104,18 @@ fictional roles consistently across the site.
   including her invention of the game itself
 - Lives in Seattle. Mentee: Douglas Ronne.
 
-### Patrick "Pat" Thornenberg — Executive Director
+### Pat Thornenberg — Executive Director (fictional)
 
-The user requested a very long and detailed bio for "Pat." This is that Pat.
+The user requested a very long and detailed bio for "Pat." This is that Pat. **Pat is
+deliberately androgynous** — first name treated as ambiguous between Patrick and
+Patricia, never resolved. The bio uses "Pat" or "Mr./Ms. Thornenberg" or simply
+"Director Thornenberg." Photographs depict an androgynous middle-aged person in
+sober federation attire. The reader should not be able to tell which Pat this is.
 
-- **Full name:** Patrick "Pat" Thornenberg
+- **Full name:** Pat Thornenberg (initials "P. Thornenberg" preferred in formal
+  signage; "Patrick" appears in some older Sector records, "Patricia" in others —
+  the bylaws committee declines to clarify, and Pat themself has never publicly
+  addressed it)
 - **Title:** Executive Director, ICA (since [year — invent: 2009])
 - **Concurrent roles:** Chairman, NCCWL; Chair of the United States and Caribbean Sector
 - **Style:** Formal, deeply earnest, prone to citing bylaw subsections in casual correspondence
@@ -133,8 +141,10 @@ The detailed bio for the About page should be 1500–2500 words. Suggested arc:
    anti-coaching protocol; the 2019 reform of Tribunal appeals; the 2024 electronic
    pegboard feasibility study; the ongoing "long-distance mentorship" framework
 7. **Personal** — never married to cribbage (always to the work itself); known for personal
-   correspondence in which he weeps openly at moments of mentor/mentee bonding; collects
-   antique pegboards; rumored to keep a small office helicopter at his disposal
+   correspondence in which Pat weeps openly at moments of mentor/mentee bonding; collects
+   antique pegboards; rumored to keep a small office helicopter at the secretariat's
+   disposal. Pronouns in any direct reference to Pat: use the name or "Director Thornenberg";
+   avoid he/she/they.
 
 Pat's prose voice in any first-person ICA copy should match the evidence emails:
 formal, escalatingly intense, fond of multiple-synonym lists
@@ -329,13 +339,27 @@ the archive for readers who scroll back. Doug should remain Pi Level throughout.
 - Officials are referred to by title + surname on second reference
   ("Mr. Thornenberg said," not "Pat said")
 
-## Privacy/legal note
+## Audience and tone
 
-The evidence contains real names, real email addresses, and a real street address
-(821 N Cleveland Ave, Sherman TX). **None of these should appear on the public site.**
+**The site is a private joke between friends.** The technical hosting is public (on a real
+domain), but the intended audience is Doug, Alicia, Tony, Michelle, and the rest of the
+friend group. Write for them. Outsiders who stumble across the site will find a baffling
+federation site — that's fine.
 
-- Use the fictional ICA HQ address (Suckling House, Lange Voorhout, The Hague)
-- Do not publish anyone's real email address — use `secretariat@internationalcribbageassociation.org`
-  style fictional addresses (which can simply not exist or alias to the user's own inbox)
-- Photographs of real people require their consent before going on the site
-- The "Bart" storyline is the highest-risk item; see warning above
+This framing means:
+- Tony and Alicia's scandal arc is fully fair game; they're co-authors of the joke
+- Michelle, Katrina, and Tim still **never appear as the butt of any joke** — they are
+  dignified supporting characters (see the constraint above). This rule holds regardless
+  of audience.
+- Pat and Bart are fictional, so write them freely
+
+## Practical hygiene (still applies even between friends)
+
+- Use the fictional ICA HQ address (Suckling House, Lange Voorhout, The Hague), never
+  any friend's real street address
+- Do not publish anyone's personal email address — use
+  `secretariat@internationalcribbageassociation.org` style fictional addresses
+- For photographs of real people: Doug can provide his own; for Alicia and Tony, use
+  the WhatsApp joke art (they sent it into the chat themselves, so consent is implicit
+  for friend-group reuse); for Michelle, Katrina, and Tim, **default to a dignified
+  silhouette/placeholder** unless Doug confirms they're okay being depicted
