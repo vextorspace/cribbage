@@ -45,6 +45,7 @@ See:
 - [steering/image-assets.md](steering/image-assets.md) — catalog of joke art from the chat, mapped to site uses
 - [steering/tech-stack.md](steering/tech-stack.md) — Django stack details
 - [steering/deployment.md](steering/deployment.md) — GitHub Actions + SSH deploy
+- [steering/server-setup.md](steering/server-setup.md) — VPS one-time setup checklist
 
 ## Quick canon (full version in steering/canon.md)
 
