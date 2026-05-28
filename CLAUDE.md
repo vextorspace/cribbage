@@ -42,6 +42,7 @@ See:
 - [steering/content-plan.md](steering/content-plan.md) — pages, news stories, fake-org elements
 - [steering/features.md](steering/features.md) — interactive features (membership form, scorer, events)
 - [steering/design.md](steering/design.md) — visual direction
+- [steering/image-assets.md](steering/image-assets.md) — catalog of joke art from the chat, mapped to site uses
 - [steering/tech-stack.md](steering/tech-stack.md) — Django stack details
 - [steering/deployment.md](steering/deployment.md) — GitHub Actions + SSH deploy
 
