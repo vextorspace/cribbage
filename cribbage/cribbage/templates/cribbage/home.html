@@ -1,0 +1,89 @@
+{% extends 'cribbage/base.html' %}
+
+{% block title %}International Cribbage Association &mdash; Stewards of the Game Since 1893{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero__inner">
+        <p class="hero__eyebrow">Quindecim duo</p>
+        <h1 class="hero__title">Stewards of the Game Since 1893</h1>
+        <p class="hero__lede">
+            The International Cribbage Association is the sole sanctioning body for
+            international competitive cribbage, representing eighty-seven national
+            federations across six confederations.
+        </p>
+        <div class="hero__actions">
+            <a class="btn btn--primary" href="{% url 'rules' %}">The Rules</a>
+            <a class="btn btn--ghost" href="{% url 'news_index' %}">Latest Bulletins</a>
+        </div>
+    </div>
+</section>
+
+<section class="home-bulletins">
+    <div class="container">
+        <h2 class="section-heading">From the Secretariat</h2>
+        <p class="section-lede">
+            The Association's latest bulletins, statements, and Tribunal communiqu&eacute;s.
+            For the full archive see the <a href="{% url 'news_index' %}">news index</a>.
+        </p>
+        <div class="bulletin-grid">
+            <article class="bulletin">
+                <p class="bulletin__date">Forthcoming</p>
+                <h3 class="bulletin__title">Tribunal Opens Inquiry Into Equine Participation in Sanctioned Play</h3>
+                <p class="bulletin__excerpt">
+                    The ICA Tribunal has convened to examine reports of unsanctioned
+                    matches contested against equine opponents, citing the documented
+                    numerical ceiling of three and confirmed phonetic limitations
+                    surrounding the count of thirty-one.
+                </p>
+            </article>
+            <article class="bulletin">
+                <p class="bulletin__date">Forthcoming</p>
+                <h3 class="bulletin__title">Director Thornenberg: &ldquo;Stop, Cease, Desist&rdquo;</h3>
+                <p class="bulletin__excerpt">
+                    Executive Director P. Thornenberg has issued provisional suspensions
+                    pending the outcome of Tribunal proceedings, calling on all
+                    member federations to honour the determination of the Association.
+                </p>
+            </article>
+            <article class="bulletin">
+                <p class="bulletin__date">Forthcoming</p>
+                <h3 class="bulletin__title">Hall of Champion Tarpaulins Cullen Portrait</h3>
+                <p class="bulletin__excerpt">
+                    The Internationale Wereldwijde Cribbage Champions Associatie
+                    (IWCCA) has provisionally obscured the commissioned portrait of
+                    Mr. Cullen pending the final ruling of the proceedings.
+                </p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="home-welcome">
+    <div class="container container--narrow">
+        <h2 class="section-heading">From the Executive Director</h2>
+        <p>
+            On behalf of the Secretariat and the eighty-seven member federations of
+            the International Cribbage Association, I extend a sober welcome to the
+            Association's official register of record.
+        </p>
+        <p>
+            The Association has, since its founding in the autumn of 1893, regarded
+            the proper conduct of the game as a matter of the deepest institutional
+            seriousness. It continues to do so today, in The Hague as in London before
+            it, and in the eighty-seven national chanceries that report through this
+            secretariat.
+        </p>
+        <p>
+            We commend to the visitor's attention our codified rules, our calendar of
+            sanctioned events, and our official scoring engine &mdash; the instrument
+            used by Tribunal adjudicators in all sanctioned competitions.
+        </p>
+        <p class="home-welcome__sign-off">
+            Yours in cribbage,<br>
+            <strong>P. Thornenberg</strong><br>
+            <em>Executive Director</em>
+        </p>
+    </div>
+</section>
+{% endblock %}
