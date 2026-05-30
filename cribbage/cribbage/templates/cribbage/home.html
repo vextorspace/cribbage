@@ -27,34 +27,15 @@
             For the full archive see the <a href="{% url 'news_index' %}">news index</a>.
         </p>
         <div class="bulletin-grid">
+            {% for story in featured_stories %}
             <article class="bulletin">
-                <p class="bulletin__date">Forthcoming</p>
-                <h3 class="bulletin__title">Tribunal Opens Inquiry Into Equine Participation in Sanctioned Play</h3>
-                <p class="bulletin__excerpt">
-                    The ICA Tribunal has convened to examine reports of unsanctioned
-                    matches contested against equine opponents, citing the documented
-                    numerical ceiling of three and confirmed phonetic limitations
-                    surrounding the count of thirty-one.
-                </p>
+                <p class="bulletin__date">{{ story.date_display }}</p>
+                <h3 class="bulletin__title">
+                    <a href="{% url 'news_detail' story.slug %}">{{ story.title|safe }}</a>
+                </h3>
+                <p class="bulletin__excerpt">{{ story.excerpt|safe }}</p>
             </article>
-            <article class="bulletin">
-                <p class="bulletin__date">Forthcoming</p>
-                <h3 class="bulletin__title">Director Thornenberg: &ldquo;Stop, Cease, Desist&rdquo;</h3>
-                <p class="bulletin__excerpt">
-                    Executive Director P. Thornenberg has issued provisional suspensions
-                    pending the outcome of Tribunal proceedings, calling on all
-                    member federations to honour the determination of the Association.
-                </p>
-            </article>
-            <article class="bulletin">
-                <p class="bulletin__date">Forthcoming</p>
-                <h3 class="bulletin__title">Hall of Champion Tarpaulins Cullen Portrait</h3>
-                <p class="bulletin__excerpt">
-                    The Internationale Wereldwijde Cribbage Champions Associatie
-                    (IWCCA) has provisionally obscured the commissioned portrait of
-                    Mr. Cullen pending the final ruling of the proceedings.
-                </p>
-            </article>
+            {% endfor %}
         </div>
     </div>
 </section>

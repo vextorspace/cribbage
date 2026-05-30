@@ -1,0 +1,102 @@
+{% extends 'cribbage/base.html' %}
+
+{% block title %}Veterinary Linguist Confirms Horses Cannot Pronounce &ldquo;Thirty-One&rdquo; &mdash; ICA{% endblock %}
+
+{% block content %}
+<article class="news-article">
+
+    <header class="news-article__header">
+        <p class="news-article__category small-caps">Tribunal Testimony &middot; Case ICA-T-2026-014</p>
+        <h1 class="news-article__title">
+            Veterinary Linguist Confirms Horses Cannot Pronounce &ldquo;Thirty-One&rdquo;
+        </h1>
+        <p class="news-article__subhead">
+            <em>Expert Testimony Establishes a Confirmed Numerical Ceiling
+            of Three; Findings Annexed to the Tribunal's Working File</em>
+        </p>
+        <p class="news-article__byline">
+            From the Secretariat &middot; 22 March MMXXVI &middot; The Hague
+        </p>
+    </header>
+
+    <div class="news-article__body">
+
+        <p class="news-article__lead">
+            <span class="news-article__dateline">THE HAGUE &mdash;</span>
+            The Tribunal of the International Cribbage Association heard
+            expert testimony Wednesday from a leading veterinary linguist,
+            who confirmed that horses possess a strict and irreducible
+            numerical ceiling of three and are, in addition, anatomically
+            incapable of producing the phonetic articulations required to
+            pronounce the word &ldquo;thirty-one.&rdquo;
+        </p>
+
+        <p>
+            The testimony was presented by Professor Helga Eikenboom of the
+            Royal Veterinary College, London, who has spent the better part
+            of three decades documenting the cognitive and articulatory
+            limits of large mammals in respect of human numerical systems.
+            Professor Eikenboom appeared before the Tribunal under formal
+            warrant of expertise issued by the Secretariat.
+        </p>
+
+        <p>
+            &ldquo;The equine subject can be trained to recognise one
+            object, two objects, and three objects, and to respond to those
+            quantities reliably,&rdquo; Professor Eikenboom told the
+            Tribunal, according to a summary released by the Office of the
+            Director. &ldquo;Beyond three, the subject does not generalise.
+            The notion of fifteen-two, fifteen-four, then a pair for eight,
+            then a run of three for eleven is wholly outside the equine
+            cognitive register.&rdquo;
+        </p>
+
+        <p>
+            The linguistic findings were the subject of an extended
+            colloquy. Professor Eikenboom observed that the dental and
+            labial structures of <em>Equus caballus</em> are constitutionally
+            unsuited to the fricative and dental consonants required to
+            articulate <em>thirty-one</em>. The Tribunal received a phonetic
+            transcription of the closest equine approximation, which the
+            Secretariat has declined to publish in the present register.
+        </p>
+
+        <p>
+            The implications for the inquiry under Case ICA-T-2026-014 are
+            understood to be substantial. The Association's bylaws require,
+            in the play, the affirmative announcement of the running count
+            by each player at each successive card. A participant
+            constitutionally unable to announce a count above three could
+            not lawfully complete a hand under the standing rules. Sanctioned
+            wins logged against equine opponents are accordingly understood
+            to face expungement from the records of both principal parties.
+        </p>
+
+        <p>
+            Professor Eikenboom's full written annex, together with the
+            phonetic appendix, has been admitted to the Tribunal's working
+            file. The Office of the Tribunal advises that requests for
+            inspection of the annex shall be addressed to the Secretariat
+            in writing and on appropriate letterhead.
+        </p>
+
+        <p>
+            Counsel for Mr. Cullen and Ms. Lake reserved cross-examination
+            of Professor Eikenboom for the Tribunal's reconvening in April.
+
+        </p>
+
+        <p class="news-article__footnote">
+            <em>Mr. D. Ronne (Pi Level, 3.14) remains the lowest-ranked
+            individual ever inducted into the Association and has not
+            progressed since induction.</em>
+        </p>
+
+        <p class="news-article__end">&mdash; 30 &mdash;</p>
+    </div>
+
+    <footer class="news-article__related">
+        <a href="{% url 'news_index' %}">&laquo; Return to the Bulletin index</a>
+    </footer>
+</article>
+{% endblock %}
