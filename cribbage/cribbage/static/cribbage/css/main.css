@@ -536,6 +536,118 @@ address { font-style: normal; line-height: 1.7; }
 }
 .site-footer__legal .gilt { font-style: normal; letter-spacing: 0.15em; }
 
+/* ── Bylaws / Rules page ─────────────────────────────────────── */
+
+.bylaws { color: var(--color-ink); }
+
+.bylaws-preamble {
+    font-family: var(--font-body);
+    font-size: 1.15rem;
+    line-height: 1.7;
+    text-align: center;
+    color: var(--color-ink-soft);
+    margin: 0 auto 1rem;
+    max-width: 38rem;
+}
+
+.bylaws-article {
+    margin: 3.5rem 0;
+    padding-top: 2.5rem;
+    border-top: 1px solid rgba(184, 134, 46, 0.4);
+    position: relative;
+}
+.bylaws-article:first-of-type {
+    border-top: none;
+    padding-top: 1rem;
+}
+
+.bylaws-article__header {
+    display: flex;
+    align-items: baseline;
+    gap: 1.25rem;
+    margin: 0 0 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(184, 134, 46, 0.3);
+}
+.bylaws-article__numeral {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 3rem;
+    letter-spacing: 0.04em;
+    line-height: 1;
+    flex-shrink: 0;
+    min-width: 3.5rem;
+}
+.bylaws-article__title {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 1.7rem;
+    margin: 0;
+    color: var(--color-forest);
+    letter-spacing: 0.03em;
+}
+
+.bylaws-section {
+    margin: 0 0 1.75rem;
+}
+.bylaws-section__title {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--color-oxblood);
+    margin: 0 0 0.65rem;
+}
+.bylaws-section p {
+    margin: 0 0 0.75rem;
+}
+
+.bylaws-list {
+    margin: 0.5rem 0 0;
+    padding: 0;
+}
+.bylaws-list dt {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--color-gilt-deep);
+    margin-top: 1rem;
+}
+.bylaws-list dt:first-child { margin-top: 0; }
+.bylaws-list dd {
+    margin: 0.25rem 0 0;
+    padding-left: 1.25rem;
+    border-left: 2px solid var(--color-gilt);
+    color: var(--color-ink);
+}
+
+.bylaws-footnote {
+    margin-top: 2rem;
+    padding: 0.85rem 1rem 0.85rem 1.25rem;
+    background: rgba(184, 134, 46, 0.06);
+    border-left: 2px solid var(--color-gilt);
+    font-size: 0.92rem;
+    line-height: 1.55;
+    color: var(--color-ink-soft);
+    font-style: italic;
+}
+.bylaws-footnote sup {
+    font-style: normal;
+    color: var(--color-gilt-deep);
+    font-weight: 700;
+    margin-right: 0.2rem;
+}
+
+.bylaws sup a {
+    text-decoration: none;
+    color: var(--color-gilt-deep);
+    font-weight: 700;
+}
+.bylaws sup a:hover { color: var(--color-oxblood); }
+
 /* ── Responsive ──────────────────────────────────────────────── */
 
 @media (max-width: 720px) {
@@ -549,4 +661,8 @@ address { font-style: normal; line-height: 1.7; }
     .site-header__crest { width: 52px; height: 60px; font-size: 1.2rem; }
     .site-header__name { font-size: 1.15rem; }
     .page-header h1 { font-size: 1.9rem; }
+
+    .bylaws-article__header { flex-direction: column; gap: 0.5rem; align-items: flex-start; }
+    .bylaws-article__numeral { font-size: 2.25rem; min-width: 0; }
+    .bylaws-article__title { font-size: 1.4rem; }
 }

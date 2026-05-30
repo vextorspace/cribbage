@@ -1,24 +1,474 @@
 {% extends 'cribbage/base.html' %}
 
-{% block title %}The Rules of Cribbage &mdash; International Cribbage Association{% endblock %}
+{% block title %}The Rules of the Game &mdash; International Cribbage Association{% endblock %}
 
 {% block content %}
 <section class="page-header">
     <div class="container">
         <h1>The Rules of the Game</h1>
         <p class="page-header__lede">
-            As codified by the Association under the 1968 Bordeaux Rules Revision
-            and subsequent amendments.
+            Codified by the Association under the 1923 Geneva Accords (Cribbage),
+            as amended by the 1968 Bordeaux Revision and the resolutions of the
+            successor Congresses.
         </p>
     </div>
 </section>
 
 <section class="page-body">
-    <div class="container container--narrow">
-        <p class="placeholder-note">
-            The Association is presently formatting the complete rules of cribbage
-            for publication in this register. Sections forthcoming: the deal and the
-            crib; the play; the show; scoring tracks and skunks; ratified variants.
+    <div class="container container--narrow bylaws">
+
+        <p class="bylaws-preamble">
+            <em>What follows is the standing code of the game of cribbage as
+            administered by the International Cribbage Association. It is the
+            sole authority in all sanctioned play, in all confederations, and in
+            all matters before the Tribunal. The Association adopts the rules
+            below in the spirit, and so far as practicable in the letter, of the
+            game's English originators and of the customs continuously observed
+            since the Worshipful Society of Cribbage Players first met at the
+            Reform Club in the autumn of MDCCCXCIII.</em>
+        </p>
+
+        <div class="ornament" aria-hidden="true">
+            <span class="ornament__mark">&#10086;</span>
+        </div>
+
+        <article class="bylaws-article">
+            <header class="bylaws-article__header">
+                <span class="bylaws-article__numeral gilt">I.</span>
+                <h2 class="bylaws-article__title">The Game and Its Apparatus</h2>
+            </header>
+
+            <section class="bylaws-section">
+                <h3 class="bylaws-section__title">&sect; 1. The Pack</h3>
+                <p>
+                    Sanctioned play is conducted with a single standard pack of
+                    fifty-two cards. The Joker, having no place in the historical
+                    game, is excluded from sanctioned use.
+                </p>
+            </section>
+
+            <section class="bylaws-section">
+                <h3 class="bylaws-section__title">&sect; 2. The Board</h3>
+                <p>
+                    The cribbage board comprises two principal tracks of sixty
+                    points each, traversed twice in the standard match, with a
+                    terminal hole marking the one hundred and twenty-first point.
+                    Two pegs are required to each player; the rearward peg is
+                    advanced at each score.<sup><a href="#fn-1">1</a></sup>
+                </p>
+            </section>
+
+            <section class="bylaws-section">
+                <h3 class="bylaws-section__title">&sect; 3. The Value of Cards</h3>
+                <p>
+                    For purposes of the count, each numeral card carries its face
+                    value (the Ace counting as one in all situations). The Jack,
+                    Queen, and King each count as ten. For the formation of runs
+                    in the Show, ordinary sequence of rank is observed
+                    (A&ndash;2&ndash;3&hellip;J&ndash;Q&ndash;K), and the Ace is
+                    low in all sequences.
+                </p>
+            </section>
+
+            <p class="bylaws-footnote" id="fn-1">
+                <sup>1</sup> The feasibility of electronic pegboards in sanctioned
+                play remains the subject of ongoing study by the Rules Committee;
+                no determination has been reached as of the 2024 Congress.
+            </p>
+        </article>
+
+        <article class="bylaws-article">
+            <header class="bylaws-article__header">
+                <span class="bylaws-article__numeral gilt">II.</span>
+                <h2 class="bylaws-article__title">The Deal</h2>
+            </header>
+
+            <section class="bylaws-section">
+                <h3 class="bylaws-section__title">&sect; 1. Determination of First Dealer</h3>
+                <p>
+                    The players cut the pack; the player drawing the lower-ranking
+                    card deals first. In the event of a tie, the cut shall be
+                    repeated.
+                </p>
+            </section>
+
+            <section class="bylaws-section">
+                <h3 class="bylaws-section__title">&sect; 2. The Deal Proper</h3>
+                <p>
+                    Six cards are dealt to each player, one at a time, alternately,
+                    beginning with the non-dealer. The remainder of the pack
+                    is set aside, face down.
+                </p>
+            </section>
+
+            <section class="bylaws-section">
+                <h3 class="bylaws-section__title">&sect; 3. The Crib</h3>
+                <p>
+                    Each player, having examined their six cards, lays two face
+                    down before the dealer to constitute the crib. The crib is
+                    the property of the dealer for purposes of the Show and is
+                    not examined until that time.
+                </p>
+            </section>
+
+            <section class="bylaws-section">
+                <h3 class="bylaws-section__title">&sect; 4. The Starter</h3>
+                <p>
+                    The non-dealer cuts the remaining pack; the dealer turns up
+                    the top card of the lower portion. This is the Starter, and
+                    serves as a fifth card to both the hand and the crib in the
+                    Show. Should the Starter be a Jack, the dealer scores at
+                    once two points, this score being styled <em>His Heels</em>,
+                    and not to be confused with <em>His Nobs</em> as defined at
+                    Article IV, &sect; 2.5.<sup><a href="#fn-2">2</a></sup>
+                </p>
+            </section>
+
+            <p class="bylaws-footnote" id="fn-2">
+                <sup>2</sup> The distinction between His Heels and His Nobs is
+                formally maintained per Article III of the 1923 Geneva Accords
+                (Cribbage). Tribunal rulings since 1958 have uniformly upheld the
+                forfeiture of any point claimed under the wrong style.
+            </p>
+        </article>
+
+        <article class="bylaws-article">
+            <header class="bylaws-article__header">
+                <span class="bylaws-article__numeral gilt">III.</span>
+                <h2 class="bylaws-article__title">The Play</h2>
+            </header>
+
+            <section class="bylaws-section">
+                <h3 class="bylaws-section__title">&sect; 1. The Lead and Subsequent Cards</h3>
+                <p>
+                    The non-dealer lays a single card face up before themselves
+                    and announces its value. The dealer follows with a card of
+                    their own and announces the cumulative count. Play proceeds
+                    alternately. The cumulative count may not at any time exceed
+                    thirty-one.
+                </p>
+            </section>
+
+            <section class="bylaws-section">
+                <h3 class="bylaws-section__title">&sect; 2. Scoring in the Play</h3>
+                <p>The following points accrue to the player laying the card that achieves the configuration in question:</p>
+                <dl class="bylaws-list">
+                    <dt>&sect; 2.1. The Fifteen</dt>
+                    <dd>Bringing the cumulative count to exactly fifteen: <strong>two points</strong>.</dd>
+
+                    <dt>&sect; 2.2. The Thirty-One</dt>
+                    <dd>Bringing the cumulative count to exactly thirty-one: <strong>two points</strong>.</dd>
+
+                    <dt>&sect; 2.3. The Pair, Royal, and Double Royal</dt>
+                    <dd>
+                        A card of rank matching that of the card immediately
+                        preceding: <strong>two points</strong>. Three of a rank
+                        in immediate succession: <strong>six</strong>. Four:
+                        <strong>twelve</strong>.
+                    </dd>
+
+                    <dt>&sect; 2.4. The Run</dt>
+                    <dd>
+                        Three or more cards forming a sequence of rank, played
+                        in immediate succession but not necessarily in order
+                        (e.g. 4, 6, 5): <strong>one point per card</strong> of
+                        the sequence.
+                    </dd>
+
+                    <dt>&sect; 2.5. The Go</dt>
+                    <dd>
+                        When a player cannot lay a card without exceeding
+                        thirty-one, they declare <em>Go</em>. The opponent then
+                        plays any remaining cards that do not exceed thirty-one
+                        and is awarded <strong>one point</strong> for the Go
+                        (or two, if the count reaches thirty-one exactly).
+                    </dd>
+
+                    <dt>&sect; 2.6. The Last Card</dt>
+                    <dd>
+                        The player laying the final card of the play, where
+                        thirty-one has not been reached, is awarded
+                        <strong>one point</strong>.
+                    </dd>
+                </dl>
+            </section>
+
+            <section class="bylaws-section">
+                <h3 class="bylaws-section__title">&sect; 3. The Renewal of the Series</h3>
+                <p>
+                    Upon reaching thirty-one, or upon both players being unable
+                    to continue, the count resets to zero. The unplayed cards
+                    are taken up and the series continues until all cards from
+                    both hands have been laid.
+                </p>
+            </section>
+        </article>
+
+        <article class="bylaws-article">
+            <header class="bylaws-article__header">
+                <span class="bylaws-article__numeral gilt">IV.</span>
+                <h2 class="bylaws-article__title">The Show</h2>
+            </header>
+
+            <section class="bylaws-section">
+                <h3 class="bylaws-section__title">&sect; 1. Order of the Show</h3>
+                <p>
+                    At the conclusion of the play, the non-dealer first counts
+                    their hand aloud, treating the Starter as a fifth card. The
+                    dealer then counts their hand on the same principle.
+                    Finally, the dealer turns up the crib and counts it likewise.
+                </p>
+            </section>
+
+            <section class="bylaws-section">
+                <h3 class="bylaws-section__title">&sect; 2. Combinations Scored in the Show</h3>
+                <dl class="bylaws-list">
+                    <dt>&sect; 2.1. Fifteens</dt>
+                    <dd>
+                        <strong>Two points</strong> for every distinct combination
+                        of cards (whether two, three, four, or all five) that
+                        sum to fifteen. The same card may participate in any
+                        number of distinct combinations.
+                    </dd>
+
+                    <dt>&sect; 2.2. Pairs</dt>
+                    <dd>
+                        <strong>Two points</strong> for each pair of cards of
+                        the same rank. Three of a rank scores
+                        <strong>six</strong> (being three pairs); four scores
+                        <strong>twelve</strong> (being six pairs).
+                    </dd>
+
+                    <dt>&sect; 2.3. Runs</dt>
+                    <dd>
+                        <strong>One point per card</strong> in any sequence of
+                        three, four, or five. A run accompanied by a duplicated
+                        rank constitutes a double run and is scored as the run
+                        twice (for example, 3&ndash;4&ndash;4&ndash;5 counts as
+                        two runs of three plus the pair, totalling eight).
+                    </dd>
+
+                    <dt>&sect; 2.4. The Flush</dt>
+                    <dd>
+                        <strong>Four points</strong> where all four cards of
+                        the hand are of the same suit; <strong>five points</strong>
+                        where the Starter is also of that suit. In the crib, no
+                        flush shorter than five cards may be scored.
+                    </dd>
+
+                    <dt>&sect; 2.5. His Nobs</dt>
+                    <dd>
+                        <strong>One point</strong> where the hand contains the
+                        Jack of the same suit as the Starter.
+                    </dd>
+                </dl>
+            </section>
+
+            <section class="bylaws-section">
+                <h3 class="bylaws-section__title">&sect; 3. The Maximum Hand</h3>
+                <p>
+                    The greatest score obtainable in the Show is twenty-nine,
+                    being three Fives and the Jack of one suit in the hand, with
+                    the fourth Five of that same suit as the Starter. The
+                    Association maintains a register of all sanctioned twenty-nine
+                    hands at the Secretariat; admission is by certification of
+                    the relevant national federation.<sup><a href="#fn-3">3</a></sup>
+                </p>
+            </section>
+
+            <p class="bylaws-footnote" id="fn-3">
+                <sup>3</sup> Resolution 1947-B (Bordeaux): in the event of a
+                disputed declaration of <em>nineteen</em>, the Association
+                affirms that nineteen is not a valid count, and any player
+                announcing it shall be deemed to have shown zero. The Tribunal
+                has thrice declined to revisit this determination.
+            </p>
+        </article>
+
+        <article class="bylaws-article">
+            <header class="bylaws-article__header">
+                <span class="bylaws-article__numeral gilt">V.</span>
+                <h2 class="bylaws-article__title">The Match and Its Conclusion</h2>
+            </header>
+
+            <section class="bylaws-section">
+                <h3 class="bylaws-section__title">&sect; 1. The Standard Match</h3>
+                <p>
+                    The standard sanctioned match is contested to one hundred
+                    and twenty-one points (twice around the board). The first
+                    player to reach or exceed this total is the winner, the
+                    moment of victory occurring on the peg, not on the
+                    declaration.
+                </p>
+            </section>
+
+            <section class="bylaws-section">
+                <h3 class="bylaws-section__title">&sect; 2. The Short Match</h3>
+                <p>
+                    A match to sixty-one points (once around the board) is
+                    permitted by mutual agreement of the players, but is not
+                    sanctioned for championship or qualifying play.
+                </p>
+            </section>
+
+            <section class="bylaws-section">
+                <h3 class="bylaws-section__title">&sect; 3. The Skunk</h3>
+                <p>
+                    Where the winner achieves one hundred and twenty-one before
+                    the loser has crossed the ninetieth point, the loser is said
+                    to be <em>skunked</em>, and the match is counted as a double
+                    defeat for the purposes of the standings.
+                </p>
+            </section>
+
+            <section class="bylaws-section">
+                <h3 class="bylaws-section__title">&sect; 4. The Double Skunk</h3>
+                <p>
+                    Where the loser has not yet crossed the sixtieth point at
+                    the moment of the winner's victory, the loser is said to be
+                    <em>double-skunked</em>, and the match is counted as a
+                    quadruple defeat.<sup><a href="#fn-4">4</a></sup>
+                </p>
+            </section>
+
+            <p class="bylaws-footnote" id="fn-4">
+                <sup>4</sup> A treble-defeat scoring for the double skunk, common
+                in vernacular play, is not recognised by the Association. The
+                Tribunal regards the matter as settled.
+            </p>
+        </article>
+
+        <article class="bylaws-article">
+            <header class="bylaws-article__header">
+                <span class="bylaws-article__numeral gilt">VI.</span>
+                <h2 class="bylaws-article__title">Ratified Variants</h2>
+            </header>
+
+            <section class="bylaws-section">
+                <h3 class="bylaws-section__title">&sect; 1. The Three-Hand Game</h3>
+                <p>
+                    Five cards are dealt to each of three players; each
+                    contributes one card to the crib. A further card is drawn
+                    from the pack and added to the crib. Play and Show proceed
+                    as in the standard game, with the deal rotating clockwise.
+                </p>
+            </section>
+
+            <section class="bylaws-section">
+                <h3 class="bylaws-section__title">&sect; 2. The Four-Hand Partners</h3>
+                <p>
+                    Five cards are dealt to each of four players, partners
+                    sitting opposite; each contributes one card to the crib of
+                    the dealer. Hands are counted separately but credited to the
+                    partnership for purposes of the match.
+                </p>
+            </section>
+
+            <section class="bylaws-section">
+                <h3 class="bylaws-section__title">&sect; 3. Other Variants</h3>
+                <p>
+                    The Association recognises by name, but does not sanction
+                    for championship play: Captain's Cribbage; Frontier or
+                    Auction Cribbage; Five-Card Cribbage as practised in certain
+                    regional federations; and the so-called Losing Game, in
+                    which the lowest aggregate prevails.
+                </p>
+            </section>
+        </article>
+
+        <article class="bylaws-article">
+            <header class="bylaws-article__header">
+                <span class="bylaws-article__numeral gilt">VII.</span>
+                <h2 class="bylaws-article__title">Eligibility and Conduct</h2>
+            </header>
+
+            <section class="bylaws-section">
+                <h3 class="bylaws-section__title">&sect; 1. Eligible Opponents</h3>
+                <p>
+                    Sanctioned play is between human competitors only. Equine,
+                    ovine, bovine, canine, feline, and other non-human
+                    participants are excluded from sanctioned matches per the
+                    Tribunal's interim ruling in <em>Case ICA-T-2026-014</em>.
+                    The Veterinary Linguistics Annex to the present code
+                    establishes, on the basis of expert testimony, that horses
+                    possess a confirmed numerical ceiling of three and are
+                    incapable of pronouncing <em>thirty-one</em>; analogous
+                    findings apply, <em>mutatis mutandis</em>, to the other
+                    species listed.<sup><a href="#fn-5">5</a></sup>
+                </p>
+            </section>
+
+            <section class="bylaws-section">
+                <h3 class="bylaws-section__title">&sect; 2. The Hand-on-the-Cards Protocol</h3>
+                <p>
+                    During the Show, the player whose hand is being counted
+                    shall maintain physical contact with their cards. No
+                    spectator or opposing player may indicate, by speech or by
+                    gesture, the presence or absence of any combination. This
+                    protocol was adopted by the 2017 Congress and applies in
+                    all sanctioned play.
+                </p>
+            </section>
+
+            <section class="bylaws-section">
+                <h3 class="bylaws-section__title">&sect; 3. Mentor/Mentee Correspondence</h3>
+                <p>
+                    Personal reflections exchanged in the course of the
+                    mentor/mentee relationship are confidential, and are not to
+                    be reproduced outside the four corners of the cribbage
+                    board (bylaw 16.174.22.3, &sect; 14.d). Exceptions are
+                    available upon written application to the Executive
+                    Director.
+                </p>
+            </section>
+
+            <p class="bylaws-footnote" id="fn-5">
+                <sup>5</sup> The full Veterinary Linguistics Annex, together
+                with the sworn statements of the field observers, is held in
+                the Tribunal archive at the Secretariat. Requests for inspection
+                shall be addressed to the Office of the Tribunal.
+            </p>
+        </article>
+
+        <article class="bylaws-article">
+            <header class="bylaws-article__header">
+                <span class="bylaws-article__numeral gilt">VIII.</span>
+                <h2 class="bylaws-article__title">Disputes and Appeals</h2>
+            </header>
+
+            <section class="bylaws-section">
+                <h3 class="bylaws-section__title">&sect; 1. The Tribunal</h3>
+                <p>
+                    The Tribunal of the International Cribbage Association is
+                    the sole adjudicator of all disputes arising in sanctioned
+                    play. Its determinations are final, subject only to the
+                    appeal provided in &sect; 2 below.
+                </p>
+            </section>
+
+            <section class="bylaws-section">
+                <h3 class="bylaws-section__title">&sect; 2. Appeals</h3>
+                <p>
+                    An appeal from a Tribunal determination shall be lodged in
+                    writing, on the letterhead of the appellant's national
+                    federation, within thirty days of the publication of the
+                    determination, and shall be addressed to the Executive
+                    Director at the Secretariat. No appeal is heard <em>ex
+                    parte</em>; the opposing party shall be afforded full
+                    opportunity to respond.
+                </p>
+            </section>
+        </article>
+
+        <div class="ornament" aria-hidden="true">
+            <span class="ornament__mark">&#10086;</span>
+        </div>
+
+        <p class="bylaws-preamble">
+            <em>Adopted by the Council of Federations, MMXXVI, on the joint
+            recommendation of the Rules Committee and the Office of the
+            Executive Director. Amendments are entered by resolution of the
+            Council, with notice to the membership.</em>
         </p>
     </div>
 </section>
