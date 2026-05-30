@@ -90,6 +90,9 @@ All commands run as `vextorspace` unless noted.
   ```
   (Use `python -c "from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())"`
   inside the venv to generate one)
+- [ ] **Do not set `DJANGO_DEBUG` on the server.** The setting reads from env
+      and defaults to `False`; only local-dev `.env` files should carry
+      `DJANGO_DEBUG=true`.
 - [ ] `chmod 600 .env`
 
 ### 2.4 Systemd unit for gunicorn
