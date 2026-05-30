@@ -648,6 +648,113 @@ address { font-style: normal; line-height: 1.7; }
 }
 .bylaws sup a:hover { color: var(--color-oxblood); }
 
+/* ── Bio / About page ────────────────────────────────────────── */
+
+.bio-portrait {
+    margin: 2.5rem auto 2rem;
+    max-width: 22rem;
+    text-align: center;
+}
+.bio-portrait__frame {
+    background: var(--color-surface);
+    padding: 1.25rem;
+    position: relative;
+    box-shadow:
+        0 0 0 2px var(--color-gilt) inset,
+        0 0 0 7px var(--color-surface) inset,
+        0 0 0 9px var(--color-gilt) inset,
+        0 12px 32px -12px rgba(50, 30, 0, 0.35);
+}
+.bio-portrait__placeholder {
+    aspect-ratio: 3 / 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.85rem;
+    background: var(--color-parchment);
+    color: var(--color-ink-soft);
+    padding: 1.5rem;
+    text-align: center;
+}
+.bio-portrait__name {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    letter-spacing: 0.08em;
+    color: var(--color-forest);
+}
+.bio-portrait__caption {
+    font-size: 0.85rem;
+    color: var(--color-ink-soft);
+    line-height: 1.5;
+}
+
+.bio-chapter__title {
+    font-family: var(--font-display);
+    text-align: center;
+    font-size: 2.2rem;
+    margin: 0.5rem 0 0.3rem;
+    color: var(--color-forest);
+    letter-spacing: 0.06em;
+}
+.bio-chapter__subtitle {
+    text-align: center;
+    font-size: 1.05rem;
+    color: var(--color-ink-soft);
+    margin: 0 0 2.5rem;
+}
+.bio-chapter__heading {
+    font-family: var(--font-display);
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--color-oxblood);
+    margin: 2.25rem 0 0.85rem;
+    padding-bottom: 0.35rem;
+    border-bottom: 1px solid rgba(184, 134, 46, 0.3);
+}
+
+/* ── Officer grid ────────────────────────────────────────────── */
+
+.officer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.75rem;
+    margin: 1rem 0 2rem;
+}
+.officer-card {
+    background: var(--color-surface);
+    padding: 1.5rem 1.5rem 1.75rem;
+    position: relative;
+    box-shadow:
+        0 0 0 1px var(--color-gilt) inset,
+        0 0 0 5px var(--color-surface) inset,
+        0 0 0 6px var(--color-gilt) inset,
+        0 8px 24px -10px rgba(50, 30, 0, 0.25);
+}
+.officer-card__name {
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    color: var(--color-forest);
+    margin: 0 0 0.4rem;
+    letter-spacing: 0.04em;
+    text-transform: none;
+}
+.officer-card__title {
+    font-family: var(--font-display);
+    font-size: 0.7rem;
+    color: var(--color-gilt-deep);
+    margin: 0 0 0.85rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+.officer-card__bio {
+    font-size: 0.95rem;
+    color: var(--color-ink);
+    line-height: 1.5;
+    margin: 0;
+}
+
 /* ── Responsive ──────────────────────────────────────────────── */
 
 @media (max-width: 720px) {
