@@ -1,0 +1,67 @@
+{% extends 'cribbage/base.html' %}
+{% load static %}
+
+{% block title %}Tribunal Exhibits &mdash; Case ICA-T-2026-014 &mdash; ICA{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <div class="container">
+        <h1>Tribunal Exhibits</h1>
+        <p class="page-header__lede">
+            Photographic evidence admitted to the Tribunal&rsquo;s working
+            file in <em>Case ICA-T-2026-014</em>. Published by permission
+            of the Office of the Tribunal.
+        </p>
+    </div>
+</section>
+
+<section class="page-body">
+    <div class="container container--narrow">
+
+        <p class="bylaws-preamble">
+            <em>The exhibits below depict matches alleged to have been
+            contested between the principal parties to the present
+            proceedings and equine subjects in evidently incapacitated
+            condition. The Tribunal admits the exhibits in connection with
+            its examination of equine participation in sanctioned play
+            under Article VII &sect; 1 of the standing rules and of the
+            broader pattern of conduct under enquiry. The exhibits are
+            published in their original sequence and without alteration.</em>
+        </p>
+
+        <div class="ornament" aria-hidden="true">
+            <span class="ornament__mark">&#10086;</span>
+        </div>
+
+        <div class="exhibit-list">
+            {% for exhibit in exhibits %}
+            <figure class="exhibit">
+                <div class="exhibit__label">
+                    <span class="small-caps gilt">Exhibit</span>
+                    <span class="exhibit__label-number">{{ exhibit.label }}</span>
+                </div>
+                <div class="exhibit__frame">
+                    <img src="{% static 'cribbage/images/'|add:exhibit.file %}" alt="">
+                </div>
+                <figcaption class="exhibit__caption">{{ exhibit.caption|safe }}</figcaption>
+            </figure>
+            {% endfor %}
+        </div>
+
+        <div class="ornament" aria-hidden="true">
+            <span class="ornament__mark">&#10086;</span>
+        </div>
+
+        <p class="bylaws-preamble">
+            <em>Requests for the inspection of the original photographic
+            files, together with the accompanying field-observer affidavits,
+            shall be addressed in writing to the Office of the Tribunal at
+            the Secretariat.</em>
+        </p>
+
+        <p style="text-align: center; margin-top: 2rem;">
+            <a href="{% url 'photographic_register' %}" class="btn btn--ghost">Return to the Photographic Register</a>
+        </p>
+    </div>
+</section>
+{% endblock %}

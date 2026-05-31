@@ -1106,6 +1106,94 @@ address { font-style: normal; line-height: 1.7; }
     margin-top: 1.5rem;
 }
 
+/* ── Photographic Register ───────────────────────────────────── */
+
+.register-section { margin-bottom: 3rem; }
+
+.plate-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem 2rem;
+    margin: 2rem 0 1rem;
+}
+.plate { margin: 0; }
+.plate__frame {
+    background: var(--color-surface);
+    padding: 0.75rem;
+    box-shadow:
+        0 0 0 1px var(--color-gilt) inset,
+        0 0 0 5px var(--color-surface) inset,
+        0 0 0 6px var(--color-gilt) inset,
+        0 10px 24px -12px rgba(50, 30, 0, 0.35);
+}
+.plate__frame img {
+    display: block;
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    background: var(--color-parchment);
+}
+.plate__caption {
+    margin-top: 0.85rem;
+    padding: 0 0.25rem;
+    font-size: 0.88rem;
+    line-height: 1.5;
+    color: var(--color-ink-soft);
+    font-style: italic;
+}
+
+/* ── Tribunal Exhibits ───────────────────────────────────────── */
+
+.exhibit-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin: 2rem 0;
+}
+.exhibit { margin: 0; }
+.exhibit__label {
+    display: flex;
+    align-items: baseline;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(184, 134, 46, 0.4);
+}
+.exhibit__label .small-caps {
+    font-size: 0.78rem;
+    letter-spacing: 0.16em;
+}
+.exhibit__label-number {
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+    color: var(--color-forest);
+    letter-spacing: 0.08em;
+}
+.exhibit__frame {
+    background: var(--color-surface);
+    padding: 0.85rem;
+    box-shadow:
+        0 0 0 1px var(--color-gilt) inset,
+        0 0 0 6px var(--color-surface) inset,
+        0 0 0 7px var(--color-gilt) inset,
+        0 12px 30px -12px rgba(50, 30, 0, 0.4);
+}
+.exhibit__frame img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.exhibit__caption {
+    margin-top: 1rem;
+    padding: 0.85rem 1rem 0.85rem 1.25rem;
+    background: rgba(184, 134, 46, 0.06);
+    border-left: 2px solid var(--color-gilt);
+    font-size: 0.92rem;
+    color: var(--color-ink-soft);
+    font-style: italic;
+    line-height: 1.55;
+}
+
 /* ── Responsive ──────────────────────────────────────────────── */
 
 @media (max-width: 720px) {

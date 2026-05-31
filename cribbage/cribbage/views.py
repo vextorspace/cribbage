@@ -419,6 +419,280 @@ def events(request):
     return render(request, 'cribbage/events.html', {'events': EVENTS})
 
 
+# ── The Photographic Register ────────────────────────────────────────────
+PHOTOGRAPHIC_REGISTER = [
+    {
+        'heading': 'The Officers in Portrait',
+        'lede': (
+            'Commissioned portraits and approved likenesses of the present '
+            'and immediate past officers of the Association.'
+        ),
+        'plates': [
+            {
+                'file': 'register/lake-official-portrait-monalicia.jpg',
+                'caption': (
+                    'Ms. Alicia Lake, Director of Mentorship. Oil on canvas, '
+                    'anonymous, MMXXIV. From the standing collection of the '
+                    'Suckling House Secretariat. Presently relocated to the '
+                    'basement archive pending the determination of the Tribunal.'
+                ),
+            },
+            {
+                'file': 'register/cullen-hall-of-champion-portrait.jpg',
+                'caption': (
+                    'Mr. Tony Cullen in the official portrait commissioned by '
+                    'the IWCCA for the Hall of Champion, MMXXVI. Presently '
+                    'tarpaulined at the recommendation of the IWCCA Council.'
+                ),
+            },
+            {
+                'file': 'register/lake-divine-portrait-iwcca.jpg',
+                'caption': (
+                    'Ms. Lake in the (figurative) divine pose long understood '
+                    'within the federated game as symbolic of her contributions '
+                    'to the modern era of the Association. Oil on canvas, '
+                    'commissioned by the IWCCA from the Cullen and Lake studio, '
+                    'MMXXV.'
+                ),
+            },
+            {
+                'file': 'register/lake-portrait-alternative-take.jpg',
+                'caption': (
+                    'An alternative attribution of the same composition, '
+                    'submitted to the Office of the Director by Mr. Ronne in '
+                    'correspondence of January MMXXVI. The Director has '
+                    'reserved the question of accession pending the resolution '
+                    'of the principal proceedings.'
+                ),
+            },
+        ],
+    },
+    {
+        'heading': 'Decorations &amp; Engagements',
+        'lede': (
+            'Photographic record of the senior officers in the field, at '
+            'sanctioned championships and on decorated occasions.'
+        ),
+        'plates': [
+            {
+                'file': 'register/cullen-africa-order-of-canada.jpg',
+                'caption': (
+                    'Mr. Cullen photographed during the East African sabbatical '
+                    'of MMXXVI, decorated with what Ms. Lake identified at the '
+                    'time as the Order of Canada. The citation, in respect of '
+                    'undercover assistance in the dismantling of a major '
+                    'syndicate, the Association is not at liberty to publish.'
+                ),
+            },
+            {
+                'file': 'register/lake-washington-state-finals-perfect-29.jpg',
+                'caption': (
+                    'Ms. Lake at the closing leg of the Washington State '
+                    'Finals, MMXXVI. The closing hand was the eighth sanctioned '
+                    'twenty-nine of her career.'
+                ),
+            },
+            {
+                'file': 'register/lake-huge-gesture-bulletin.jpg',
+                'caption': (
+                    'Ms. Lake at the close of a substantial gesture undertaken '
+                    'on the morning following the Washington State Finals. The '
+                    'particulars are known to the Sector Secretariat and to '
+                    'no further party.'
+                ),
+            },
+            {
+                'file': 'register/cullen-engagement-january-mmxxvi-a.jpg',
+                'caption': (
+                    'Mr. Cullen at a sanctioned engagement, January MMXXVI. '
+                    'From the Secretariat archive.'
+                ),
+            },
+            {
+                'file': 'register/cullen-engagement-january-mmxxvi-b.jpg',
+                'caption': (
+                    'Mr. Cullen at a sanctioned engagement, January MMXXVI. '
+                    'From the Secretariat archive.'
+                ),
+            },
+        ],
+    },
+    {
+        'heading': 'The Bahamian Programmes',
+        'lede': (
+            'The Cullen family expedition to the Bahamas of MMXXIII, in the '
+            'course of which Mrs. Cullen established the Spanish Wells Wild '
+            'Pig Welfare Initiative under the Special Programs portfolio.'
+        ),
+        'plates': [
+            {
+                'file': 'spanish-wells-cullen-portrait.jpg',
+                'caption': (
+                    'Mrs. Michelle Cullen, Director of Special Programs, in '
+                    'the company of the Spanish Wells sounder. 31 January '
+                    'MMXXIII.'
+                ),
+            },
+            {
+                'file': 'spanish-wells-cullen-volunteer.jpg',
+                'caption': (
+                    'Mr. Cullen in conference with a juvenile member of the '
+                    'sounder. Role characterised by the Director&rsquo;s '
+                    'office as supportive and ancillary.'
+                ),
+            },
+            {
+                'file': 'spanish-wells-lake-visit.jpg',
+                'caption': (
+                    'Ms. Lake in attendance as an observer at the Director&rsquo;s '
+                    'standing invitation. 31 January MMXXIII.'
+                ),
+            },
+            {
+                'file': 'register/bahamian-engagement-at-sunset.jpg',
+                'caption': (
+                    'A sanctioned vessel of the Cullen family at the close of '
+                    'a Caribbean engagement. The Convening Rule was, at this '
+                    'hour, in force.'
+                ),
+            },
+            {
+                'file': 'register/bahamian-engagement-kayak.jpg',
+                'caption': (
+                    'A member of the Spanish Wells expedition party at the '
+                    'eastern cays, MMXXIII. The identification has not been '
+                    'settled by the archivist.'
+                ),
+            },
+            {
+                'file': 'register/ronne-on-tender-maintenance.jpg',
+                'caption': (
+                    'Mr. Douglas Ronne photographed in the main cabin of the '
+                    'Cullen family tender, mid-overhaul. The wrench is held '
+                    'aloft by tradition at the close of a successful '
+                    'maintenance engagement.'
+                ),
+            },
+            {
+                'file': 'register/bahamian-engagement-grotto.jpg',
+                'caption': (
+                    'A member of the Bahamian expedition party at the eastern '
+                    'grotto, MMXXIII. The identification, again, has not been '
+                    'settled.'
+                ),
+            },
+            {
+                'file': 'register/equine-cousin-roadside.jpg',
+                'caption': (
+                    'An equine cousin of the present proceedings, photographed '
+                    'at the roadside in the Eleuthera district. The animal has '
+                    'no standing in any sanctioned engagement.'
+                ),
+            },
+        ],
+    },
+    {
+        'heading': 'Patronage and Commemoration',
+        'lede': (
+            'Donations to the Association from its patrons, and material '
+            'from the standing commemorative archive.'
+        ),
+        'plates': [
+            {
+                'file': 'register/katrina-tim-cribbage-board-donation.jpg',
+                'caption': (
+                    'The inlaid rosewood cribbage board donated by Patrons '
+                    'Katrina and Tim, now on display in the Director&rsquo;s '
+                    'antechamber. The peg holes are positioned by tradition.'
+                ),
+            },
+            {
+                'file': 'register/champion-nutritional-supplement.jpg',
+                'caption': (
+                    'The Association&rsquo;s standing nutritional supplement '
+                    'for sanctioned champions, distributed by the Secretariat '
+                    'on the day of the championship. Composition presently '
+                    'undisclosed.'
+                ),
+            },
+            {
+                'file': 'register/cullen-holiday-greeting-mmxxv.jpg',
+                'caption': (
+                    'Mr. Cullen&rsquo;s annual seasonal greeting to the '
+                    'federated game, MMXXV. Distributed by the Secretariat to '
+                    'the membership in the customary manner.'
+                ),
+            },
+        ],
+    },
+]
+
+
+TRIBUNAL_EXHIBITS = [
+    {
+        'label': '014-A',
+        'file': 'tribunal-exhibits/exhibit-014-a.jpg',
+        'caption': (
+            'Photographic evidence of an unsanctioned equine engagement '
+            'contested by Ms. Lake against the equine subject in evidently '
+            'incapacitated condition. Provenance: confidential informant of '
+            'the WICC field observation programme.'
+        ),
+    },
+    {
+        'label': '014-B',
+        'file': 'tribunal-exhibits/exhibit-014-b.jpg',
+        'caption': (
+            'A further engagement of the same series. The cribbage board, '
+            'pegs, and a partial hand of cards are visible to the left of '
+            'the equine subject; the subject&rsquo;s posture is not '
+            'consistent with active participation in the play.'
+        ),
+    },
+    {
+        'label': '014-C',
+        'file': 'tribunal-exhibits/exhibit-014-c.jpg',
+        'caption': (
+            'Photographic evidence of the engagement at a third venue. The '
+            'pattern of relocation is itself a matter of the present '
+            'inquiry.'
+        ),
+    },
+    {
+        'label': '014-D',
+        'file': 'tribunal-exhibits/exhibit-014-d.jpg',
+        'caption': (
+            'A further engagement of the same series. The Tribunal observes '
+            'that the equine subject&rsquo;s announcement of the running '
+            'count is not, in any of the images of the present series, '
+            'plainly evidenced.'
+        ),
+    },
+    {
+        'label': '014-E',
+        'file': 'tribunal-exhibits/exhibit-014-e.jpg',
+        'caption': (
+            'The final exhibit of the present series, contested at a venue '
+            'the parties have declined to identify. The Tribunal will receive '
+            'further evidence on the question of the venue at its session of '
+            'June next.'
+        ),
+    },
+]
+
+
+def photographic_register(request):
+    return render(request, 'cribbage/photographic_register.html', {
+        'sections': PHOTOGRAPHIC_REGISTER,
+    })
+
+
+def tribunal_exhibits(request):
+    return render(request, 'cribbage/tribunal_exhibits.html', {
+        'exhibits': TRIBUNAL_EXHIBITS,
+    })
+
+
 def membership_apply(request):
     return render(request, 'cribbage/membership_apply.html')
 

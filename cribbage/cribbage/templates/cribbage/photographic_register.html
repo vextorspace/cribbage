@@ -1,0 +1,55 @@
+{% extends 'cribbage/base.html' %}
+{% load static %}
+
+{% block title %}The Photographic Register &mdash; International Cribbage Association{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <div class="container">
+        <h1>The Photographic Register</h1>
+        <p class="page-header__lede">
+            The standing photographic archive of the Association: portraits
+            of the present officers, photographic record of decorated
+            engagements, and material from the Association&rsquo;s
+            commemorative collection.
+        </p>
+    </div>
+</section>
+
+<section class="page-body">
+    <div class="container">
+
+        {% for section in sections %}
+        <div class="register-section">
+            <h2 class="section-heading">{{ section.heading|safe }}</h2>
+            <p class="section-lede">{{ section.lede|safe }}</p>
+
+            <div class="plate-grid">
+                {% for plate in section.plates %}
+                <figure class="plate">
+                    <div class="plate__frame">
+                        <img src="{% static 'cribbage/images/'|add:plate.file %}"
+                             alt="">
+                    </div>
+                    <figcaption class="plate__caption">{{ plate.caption|safe }}</figcaption>
+                </figure>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="ornament" aria-hidden="true">
+            <span class="ornament__mark">&#10086;</span>
+        </div>
+        {% endfor %}
+
+        <p class="bylaws-preamble">
+            <em>Material in this Register is held in the standing collection
+            of the Suckling House Secretariat. Photographic evidence in
+            present proceedings before the Tribunal is held separately and
+            is accessible
+            <a href="{% url 'tribunal_exhibits' %}">by permission of the
+            Office of the Tribunal</a>.</em>
+        </p>
+    </div>
+</section>
+{% endblock %}
