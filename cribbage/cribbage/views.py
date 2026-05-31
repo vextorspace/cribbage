@@ -54,6 +54,53 @@ NEWS_STORIES = [
             'ICA-T-2026-014. The principal parties have been notified.'
         ),
     },
+    # ── The Rise: Tony Cullen and Alicia Lake (archive) ───────────────────
+    {
+        'slug': 'cullen-lake-masters-dubai',
+        'date_display': '14 November MMXXIV',
+        'category': 'From the Archive · Sector Resolution',
+        'title': 'Cullen and Lake Elevated to Masters Level Following Sector Vote in Dubai',
+        'excerpt': (
+            'The Association’s highest distinction was conferred jointly upon '
+            'Mr. Cullen and his sanctioned mentee Ms. Lake at the Madinat '
+            'Jumeirah Conference Centre. Mr. Douglas Ronne was concurrently '
+            'inducted at the Pi Level on the motion of Mr. Cullen.'
+        ),
+    },
+    {
+        'slug': 'lake-mentee-induction',
+        'date_display': '22 September MMXVIII',
+        'category': 'From the Archive · Sector Designation',
+        'title': 'Lake Inducted as Cullen’s First Sanctioned Mentee; Sector Hails “A Singular Partnership”',
+        'excerpt': (
+            'The North American Sector formally designated Ms. Lake as the '
+            'sanctioned mentee of Level 3 holder Mr. Cullen — the first female '
+            'mentee designated by a Level 3 holder in the Sector’s history.'
+        ),
+    },
+    {
+        'slug': 'cullen-level-3-helsinki',
+        'date_display': '18 March MMXV',
+        'category': 'From the Archive · Congress Despatch',
+        'title': 'Cullen Elevated to Level 3 at the Helsinki Congress; Federation Cites “Singular Mastery of the Crib”',
+        'excerpt': (
+            'The Council of Federations, in unanimous voice vote at Finlandia '
+            'Hall, elevated Mr. Cullen to the Association’s second-highest '
+            'certification. The Sanctioning Committee took particular note of '
+            'the player’s 78 per cent skunk rate across all sanctioned play.'
+        ),
+    },
+    {
+        'slug': 'cullen-level-1-toronto',
+        'date_display': '12 October MMIX',
+        'category': 'From the Archive · Sector News',
+        'title': 'Cullen Confirmed at Level 1 Certification; Sector Notes “A Quietly Generational Player”',
+        'excerpt': (
+            'Mr. Cullen crossed the thirty-thousand sanctioned-win threshold '
+            'at the Toronto Regional, becoming the seventh holder of the Level '
+            '1 distinction inducted by the North American Sector in the decade.'
+        ),
+    },
 ]
 
 
