@@ -12,6 +12,20 @@ from django.views.decorators.http import require_http_methods
 # below in chronological retreat.
 NEWS_STORIES = [
     {
+        'slug': 'ronne-2025-title-confirmed',
+        'date_display': '28 May MMXXVI',
+        'category': 'Tribunal Determination · Annex C',
+        'title': 'Tribunal Confirms Ronne as Undisputed 2025 World Title Holder under the Convening Rule; Cullen and Lake Censured for Concealment',
+        'excerpt': (
+            'The Tribunal records the simultaneous skunking of two Masters '
+            'holders by Mr. Ronne in the first of three aboard the Cullen '
+            'family sailing tender off the Bahamian cays — a feat without '
+            'recorded precedent in the modern history of the game. The '
+            'sixteen-month concealment is characterised as "a singular '
+            'embarrassment to two senior holders of the Association."'
+        ),
+    },
+    {
         'slug': 'thornenberg-suspensions',
         'date_display': '20 May MMXXVI',
         'category': 'Statement from the Director',
