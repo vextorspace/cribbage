@@ -919,6 +919,30 @@ address { font-style: normal; line-height: 1.7; }
     text-align: right;
 }
 
+.news-article__figure {
+    margin: 2.25rem 0;
+    padding: 0;
+}
+.news-article__figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    box-shadow:
+        0 0 0 1px var(--color-gilt),
+        0 0 0 6px var(--color-surface),
+        0 0 0 7px var(--color-gilt),
+        0 12px 28px -10px rgba(50, 30, 0, 0.35);
+}
+.news-article__figure figcaption {
+    margin-top: 1rem;
+    padding: 0 0.5rem;
+    font-size: 0.92rem;
+    color: var(--color-ink-soft);
+    font-style: italic;
+    text-align: center;
+    line-height: 1.55;
+}
+
 .news-article__footnote {
     margin-top: 2rem;
     padding: 0.85rem 1rem 0.85rem 1.25rem;

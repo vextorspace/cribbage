@@ -35,6 +35,23 @@ Confirmed viewed (representative):
 | `WhatsApp Image 2026-03-31 at 16.25.59.jpeg` | Katrina and Tim's gift crib board ("Guess where the pegs go") | **Donors / Patrons page** — Katrina & Tim acknowledgement |
 | `WhatsApp Image 2026-05-18 at 15.11.57.jpeg` | "Nutritious substance made for true champions" (the one Alicia let Doug eat) | Lake rise-era story / champion lifestyle archive |
 
+## Spanish Wells / Bahamas trip, 2023
+
+A second batch of source photographs documenting a sailing visit to the Bahamas
+in early-to-mid 2023. The pig-beach photographs at Spanish Wells are the
+load-bearing material for the **Michelle Cullen wild pigs** story.
+
+| File | Subject | Suggested site use |
+| --- | --- | --- |
+| `seascape-sailboat-sunset-2023-01-17.jpg` | Sailboat silhouetted against sunset over open water | Atmospheric — Tony's "exit strategy" archive, or a hero image on a future Sailing Subcommittee page |
+| `michelle-pigs-in-profile-2023-01-31.jpg` | **Michelle**, crouching in profile beside several wild pigs on the beach, Adirondack chairs in the background | **Spanish Wells / Wild Pigs story hero** — Michelle as the dignified caretaker |
+| `alicia-pigs-to-camera-2023-01-31.jpg` | **Alicia** in orange sweater, bending toward the pigs and looking at the camera | Spanish Wells secondary — Alicia visiting Michelle's programme |
+| `tony-petting-piglet-2023-01-31.jpg` | **Tony** reaching down toward a small brown piglet | Spanish Wells secondary — Mr. Cullen "lending support" to his wife's initiative |
+| `kayaking-back-view-2023-04-27.jpg` | Person in straw sun hat paddling a kayak through turquoise water (face obscured) | Atmospheric — Bahamas archive |
+| `douglas-with-wrench-boat-2023-04-28.jpg` | **Douglas**, blue shirt, holding up a large adjustable wrench in a boat cabin | Doug's bio page / "Director of Digital Affairs (also: shipwright apprentice)" gag |
+| `grotto-cave-2023-05-07.jpg` | Person in pink shirt + sun hat + sunglasses in a grotto / sea cave (face obscured; ambiguous between Alicia and Michelle) | Atmospheric — Bahamas archive |
+| `wild-donkey-roadside-2023-05-15.jpg` | Wild donkey/burro standing on a roadside in tropical scrub | Atmospheric — could illustrate a future "Tribunal Recognises Equine Cousins" footnote |
+
 ## How to use these on the site
 
 1. Copy the file(s) you need from `evidence/` to `cribbage/static/cribbage/images/`

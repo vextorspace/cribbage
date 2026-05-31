@@ -56,6 +56,30 @@ NEWS_STORIES = [
     },
     # ── The Rise: Tony Cullen and Alicia Lake (archive) ───────────────────
     {
+        'slug': 'lake-perfect-29-washington',
+        'date_display': '19 January MMXXVI',
+        'category': 'From the Archive · Sector Championship',
+        'title': 'Lake Wins Washington State Finals with Perfect Twenty-Nine; Bicycle Brand Cards Confirms Sponsorship Renewal',
+        'excerpt': (
+            'The closing hand — three Fives and the Jack of clubs with the '
+            'fourth Five of clubs as Starter — was the eighth sanctioned '
+            'twenty-nine of Ms. Lake’s career. The opposing player finished '
+            'below the skunk line.'
+        ),
+    },
+    {
+        'slug': 'tarbish-tournament-lake',
+        'date_display': '18 December MMXXV',
+        'category': 'From the Archive · Tournament Despatch',
+        'title': 'International Tarbish Tournament to Honour Lake as Guest in January Seattle Convocation',
+        'excerpt': (
+            'Ms. Lake becomes the first cribbage Masters holder named Guest '
+            'of Honour at the Tarbish Convocation since 1987. Mr. Cullen '
+            'compares the cross-game distinction to the Nobel Peace Prize '
+            'winner attending the Nobel Physics presentation.'
+        ),
+    },
+    {
         'slug': 'cullen-lake-masters-dubai',
         'date_display': '14 November MMXXIV',
         'category': 'From the Archive · Sector Resolution',
@@ -65,6 +89,43 @@ NEWS_STORIES = [
             'Mr. Cullen and his sanctioned mentee Ms. Lake at the Madinat '
             'Jumeirah Conference Centre. Mr. Douglas Ronne was concurrently '
             'inducted at the Pi Level on the motion of Mr. Cullen.'
+        ),
+    },
+    {
+        'slug': 'cullen-spanish-wells-pigs',
+        'date_display': '31 January MMXXIII',
+        'category': 'From the Archive · Special Programs',
+        'title': 'Cullen Wild Pig Welfare Initiative Established at Spanish Wells',
+        'excerpt': (
+            'Ms. Michelle Cullen, Director of Special Programs, has formally '
+            'extended the Special Programs portfolio to encompass the welfare '
+            'of the wild pig population resident on the eastern beaches of '
+            'Spanish Wells, in the Eleuthera District of the Bahamas.'
+        ),
+    },
+    {
+        'slug': 'lake-trudeau-rcmp-ruling',
+        'date_display': '8 June MMXXI',
+        'category': 'From the Archive · Tribunal',
+        'title': 'Tribunal Examines Allegations of RCMP Misconduct Following Lake–Trudeau Championship Final',
+        'excerpt': (
+            'Ms. Lake decisively defeated Mr. Trudeau at the Château '
+            'Frontenac before the attempted RCMP detention that followed. '
+            'The Canadian Federation’s standing has been referred to the '
+            'Office of the Director pending the Tribunal’s determination.'
+        ),
+    },
+    {
+        'slug': 'cullen-uganda-tiny-homes',
+        'date_display': '15 March MMXX',
+        'category': 'From the Archive · Philanthropic Initiative',
+        'title': 'Cullen Initiative Repurposes Retired Cribbage Boards as Tiny Homes in Uganda',
+        'excerpt': (
+            'Mr. Cullen has donated the first two hundred boards to the '
+            'Kampala district programme. Mr. Cullen acknowledges the '
+            'dwellings to be “too small to house anyone” and describes their '
+            'primary use as adjunctive structures sited alongside existing '
+            'dwellings.'
         ),
     },
     {

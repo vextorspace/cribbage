@@ -1,0 +1,151 @@
+{% extends 'cribbage/base.html' %}
+{% load static %}
+
+{% block title %}Cullen Wild Pig Initiative Established at Spanish Wells &mdash; ICA{% endblock %}
+
+{% block content %}
+<article class="news-article">
+
+    <header class="news-article__header">
+        <p class="news-article__category small-caps">From the Archive &middot; Special Programs</p>
+        <h1 class="news-article__title">
+            Cullen Wild Pig Welfare Initiative Established at Spanish Wells
+        </h1>
+        <p class="news-article__subhead">
+            <em>Director of Special Programs Extends the Portfolio to the
+            Bahamian Cay; Mr. Cullen and Ms. Lake Travel as Observers</em>
+        </p>
+        <p class="news-article__byline">
+            From the Secretariat &middot; 31 January MMXXIII &middot; Spanish Wells, Bahamas
+        </p>
+    </header>
+
+    <div class="news-article__body">
+
+        <figure class="news-article__figure">
+            <img src="{% static 'cribbage/images/spanish-wells-cullen-portrait.jpg' %}"
+                 alt="Director Cullen in profile, kneeling beside several wild pigs on a Spanish Wells beach.">
+            <figcaption>
+                Ms. Michelle Cullen, Director of Special Programs, in the
+                company of the Spanish Wells sounder. <em>31 January MMXXIII.
+                Photograph from the Secretariat archive.</em>
+            </figcaption>
+        </figure>
+
+        <p class="news-article__lead">
+            <span class="news-article__dateline">SPANISH WELLS, BAHAMAS &mdash;</span>
+            The International Cribbage Association announced Tuesday that
+            Ms. Michelle Cullen, Director of Special Programs, has formally
+            extended the Association&rsquo;s Special Programs portfolio to
+            encompass the welfare of the wild pig population resident on the
+            eastern beaches of Spanish Wells, in the Eleuthera District of
+            the Bahamas. The initiative is the Director&rsquo;s third such
+            programme to be brought under the Association&rsquo;s
+            institutional aegis.
+        </p>
+
+        <p>
+            The Spanish Wells sounder &mdash; presently comprising eleven
+            adult animals and three piglets &mdash; is understood to be the
+            sole continuously documented pig population on the cay. The
+            animals are believed to descend from a domestic herd abandoned
+            in the 1970s upon the closure of a regional smallholding and
+            have, over the intervening half-century, naturalised to the
+            beaches and the adjacent palm groves. Ms. Cullen&rsquo;s notes
+            describe each animal individually, with attention to coat,
+            temperament, and apparent social rank within the sounder.
+        </p>
+
+        <p>
+            The Director, who arrived on the cay aboard the Cullen
+            family&rsquo;s sailing tender earlier this month, has spent the
+            better part of three weeks documenting the animals&rsquo; health
+            and movements, supplying supplementary feed at the level
+            recommended by the consulting veterinarian, and coordinating
+            with the Spanish Wells municipal council on the question of
+            long-term welfare provision. A formal memorandum of understanding
+            between the Association and the council is anticipated in the
+            spring.
+        </p>
+
+        <p>
+            &ldquo;The Special Programs portfolio has always understood its
+            remit to extend beyond the immediate concerns of competitive
+            cribbage,&rdquo; Ms. Cullen said in remarks issued through the
+            Secretariat. &ldquo;Where the well-being of a vulnerable
+            population can be advanced by the careful application of the
+            Association&rsquo;s good offices, my view is that those offices
+            shall be applied. The sounder of Spanish Wells is, at this
+            moment in its history, such a population.&rdquo;
+        </p>
+
+        <figure class="news-article__figure">
+            <img src="{% static 'cribbage/images/spanish-wells-cullen-volunteer.jpg' %}"
+                 alt="Mr. Cullen bending toward a small brown piglet on a sandy beach.">
+            <figcaption>
+                Mr. Tony Cullen in conference with a juvenile member of the
+                sounder. The Director&rsquo;s office characterises Mr.
+                Cullen&rsquo;s role in the initiative as &ldquo;supportive
+                and ancillary.&rdquo;
+            </figcaption>
+        </figure>
+
+        <p>
+            Mr. Tony Cullen, the Director&rsquo;s husband and a Level 3
+            holder of the Association, accompanied the present visit and was
+            photographed in conference with one of the younger animals. Mr.
+            Cullen&rsquo;s role in the initiative is, by his own
+            description, &ldquo;supportive and ancillary&rdquo;; the
+            Director&rsquo;s office has confirmed that all programmatic
+            decisions remain with Ms. Cullen and that no element of the
+            Spanish Wells programme falls within Mr. Cullen&rsquo;s
+            standing portfolio at the Association.
+        </p>
+
+        <figure class="news-article__figure">
+            <img src="{% static 'cribbage/images/spanish-wells-lake-visit.jpg' %}"
+                 alt="Ms. Lake bending toward two wild pigs on the beach, looking at the camera.">
+            <figcaption>
+                Ms. Alicia Lake, then sanctioned mentee of Mr. Cullen, in
+                attendance as an observer. <em>31 January MMXXIII.</em>
+            </figcaption>
+        </figure>
+
+        <p>
+            Ms. Alicia Lake, sanctioned mentee of Mr. Cullen and a frequent
+            companion on the Cullen family&rsquo;s sailing engagements,
+            travelled to the cay as an observer at the Director&rsquo;s
+            standing invitation. Ms. Lake described the visit, in
+            correspondence afterwards forwarded to the Secretariat, as
+            &ldquo;a wholly clarifying experience&rdquo; and indicated that
+            she would return in the spring with her own welfare-grade
+            documentation equipment.
+        </p>
+
+        <p>
+            The Director will return to Spanish Wells on a quarterly cycle
+            for the foreseeable future. Reports of the sounder&rsquo;s
+            condition will be submitted to the Council of Federations in
+            the ordinary course and abstracts published in the
+            <em>Annual Bulletin</em>.
+
+        </p>
+
+        <p class="news-article__footnote">
+            <em>Mr. D. Ronne (Pi Level, 3.14, since MMXXV) remains the
+            lowest-ranked individual ever inducted into the Association, and
+            had not at the date of the events here described been inducted
+            at any rank. The Director has indicated, in private
+            correspondence, that Mr. Ronne&rsquo;s eventual induction would
+            be observed at Spanish Wells with a quiet supper for the
+            sounder.</em>
+        </p>
+
+        <p class="news-article__end">&mdash; 30 &mdash;</p>
+    </div>
+
+    <footer class="news-article__related">
+        <a href="{% url 'news_index' %}">&laquo; Return to the Bulletin index</a>
+    </footer>
+</article>
+{% endblock %}
