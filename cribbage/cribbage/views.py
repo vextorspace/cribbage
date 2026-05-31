@@ -1,6 +1,9 @@
+import random
+
 from django.http import Http404
 from django.shortcuts import render
 from django.template import TemplateDoesNotExist
+from django.views.decorators.http import require_http_methods
 
 
 # Authoritative news catalogue. Each entry corresponds to a template file
@@ -197,8 +200,209 @@ def news_detail(request, slug):
         raise Http404("No such bulletin.")
 
 
+# ── The sanctioned events calendar ──────────────────────────────────────
+EVENTS = [
+    {
+        'date_display': '12–14 June MMXXVI',
+        'location': 'Bordeaux, France',
+        'sanction': 'Continental Championship',
+        'title': 'European Confederation Championships',
+        'description': (
+            'The senior recurring competition of the European Confederation, '
+            'contested at the H&ocirc;tel de Ville. The defending Champion, '
+            'Mme Ren&eacute;e Charpentier of the F&eacute;d&eacute;ration '
+            'Fran&ccedil;aise, returns to defend the title for the third '
+            'consecutive year.'
+        ),
+        'registration': 'By national federation invitation; the list of qualifying federations is presently closed.',
+    },
+    {
+        'date_display': '24–26 July MMXXVI',
+        'location': 'Halifax, Nova Scotia',
+        'sanction': 'Ratified Variant · Four-Hand Partners',
+        'title': 'The Four-Hand Partners Festival',
+        'description': (
+            'The largest annual gathering of the partnered variant, hosted by '
+            'the Maritime Federation since 1979. Partnerships of long standing '
+            'and partnerships newly formed compete on the same draw.'
+        ),
+        'registration': 'Registration open through national federation thirty days prior; partnerships must be filed in writing.',
+    },
+    {
+        'date_display': '7–9 August MMXXVI',
+        'location': 'Casablanca, Kingdom of Morocco',
+        'sanction': 'Continental Championship',
+        'title': 'African Confederation Cup',
+        'description': (
+            'The senior competition of the African Confederation, contested '
+            'biennially at venues rotating among the member federations. The '
+            'Casablanca venue has hosted the Cup on four prior occasions.'
+        ),
+        'registration': 'By federation invitation; the African Confederation Secretariat administers the draw.',
+    },
+    {
+        'date_display': '23 August MMXXVI',
+        'location': 'Portland, Oregon',
+        'sanction': 'Sector Qualifier',
+        'title': 'Pacific Northwest Federation — Sanctioned Qualifier',
+        'description': (
+            'One of the regional qualifiers for the North American Sector '
+            'Championship in October. The Pacific Northwest qualifier is '
+            'noted for its severe field strength relative to its draw size.'
+        ),
+        'registration': 'Registration open through the Pacific Northwest Federation, closing the first of August.',
+    },
+    {
+        'date_display': '11–13 September MMXXVI',
+        'location': 'Toronto, Ontario',
+        'sanction': 'Sector Championship',
+        'title': 'NCCWL North American Open',
+        'description': (
+            'The senior competition of the National Crib Champ World League, '
+            'contested annually since 1947 with intermissions only in years '
+            'of the World Championship cycle. The Toronto venue has hosted '
+            'the Open on eleven prior occasions.'
+        ),
+        'registration': 'By Sector invitation; the list of invited players will be published in the Annual Bulletin.',
+    },
+    {
+        'date_display': '14–18 September MMXXVI',
+        'location': 'Reykjav&iacute;k, Iceland',
+        'sanction': 'World Championship · Quadrennial',
+        'title': 'XXIII Quadrennial World Championships',
+        'description': (
+            'The Association&rsquo;s senior recurring competition, contested '
+            'every fourth year at venues nominated by the Council of '
+            'Federations. The Reykjav&iacute;k venue&rsquo;s bid was approved '
+            'at the 2023 Sector Meeting in Dubai. The defence by the '
+            'present Champion is anticipated to be the central narrative '
+            'thread of the Championships.'
+        ),
+        'registration': 'By national federation nomination, ratified by the Sanctioning Committee.',
+    },
+    {
+        'date_display': '16 September MMXXVI',
+        'location': 'Veracruz, M&eacute;xico',
+        'sanction': 'Commemorative · Veracruz Convention',
+        'title': 'The Veracruz Convention Commemorative Tournament',
+        'description': (
+            'Marking the sixty-fourth anniversary of the Veracruz Convention '
+            'of 1962, at which the Association formally designated tequila '
+            'as the official spirit of sanctioned cribbage. The ceremonial '
+            'toast is conducted by the Executive Director.'
+        ),
+        'registration': 'Open to all sanctioned holders of any rank; registration on the day.',
+    },
+    {
+        'date_display': '18 October MMXXVI',
+        'location': 'Yarmouth, Nova Scotia',
+        'sanction': 'Sanctioned Charity Match',
+        'title': 'The Anglers&rsquo; Hospice Foundation Match',
+        'description': (
+            'An invitational eight-player charity engagement in aid of the '
+            'Yarmouth Anglers&rsquo; Hospice, in continuous operation since '
+            '1971. The Match is conducted under simplified scoring conventions '
+            'to accommodate the spectator gallery.'
+        ),
+        'registration': 'Tickets via the host institution; players by invitation only.',
+    },
+    {
+        'date_display': '18–21 October MMXXVI',
+        'location': 'Singapore',
+        'sanction': 'Continental Championship',
+        'title': 'Asian Confederation Championships',
+        'description': (
+            'The senior competition of the Asian Confederation, contested at '
+            'the Raffles Convention Centre. The Singaporean Federation, '
+            'admitted to the Confederation in 1998, hosts for the first time.'
+        ),
+        'registration': 'By federation invitation; the Asian Confederation Secretariat administers the draw.',
+    },
+    {
+        'date_display': '22–24 November MMXXVI',
+        'location': 'Mexico City, M&eacute;xico',
+        'sanction': 'Sector Open',
+        'title': 'Pan-American Open',
+        'description': (
+            'The senior open of the Pan-American Confederation, contested in '
+            'alternate years between Mexico City and S&atilde;o Paulo. The '
+            'Mexico City venue last hosted in 2024.'
+        ),
+        'registration': 'Open registration through the Mexican Federation, closing the first of November.',
+    },
+    {
+        'date_display': '12 January MMXXVII',
+        'location': 'Norwich, England',
+        'sanction': 'Sanctioned Invitational',
+        'title': 'The Suckling Memorial Invitational',
+        'description': (
+            'Held annually in the cathedral close at Norwich in commemoration '
+            'of Sir John Suckling, the seventeenth-century English poet to '
+            'whom the invention of the game is traditionally attributed. The '
+            'Invitational is contested in five-card cribbage, the historical '
+            'form of the game.'
+        ),
+        'registration': 'By the Memorial Trust&rsquo;s annual invitation, generally extended to twelve players.',
+    },
+    {
+        'date_display': '19–22 February MMXXVII',
+        'location': 'Ushuaia, Argentina',
+        'sanction': 'Continental Championship · Inaugural',
+        'title': 'Free Federation of Polar Cribbage Bodies — Inaugural Antarctic Open',
+        'description': (
+            'The first sanctioned competition of the Free Federation of Polar '
+            'Cribbage Bodies, contested in Ushuaia owing to the climatic '
+            'unsuitability of the Antarctic mainland in February. The '
+            'Federation&rsquo;s charter contemplates eventual relocation to '
+            'McMurdo Station upon the completion of the heated pavilion now '
+            'under construction.'
+        ),
+        'registration': 'By Federation nomination; the inaugural draw is presently confidential.',
+    },
+    {
+        'date_display': '5–7 March MMXXVII',
+        'location': 'Auckland, New Zealand',
+        'sanction': 'Continental Championship',
+        'title': 'Oceanic Confederation Open',
+        'description': (
+            'The senior competition of the Oceanic Confederation, hosted in '
+            'alternating years between Auckland and Brisbane. The Auckland '
+            'venue&rsquo;s Tasman Room has hosted the Open since 1992.'
+        ),
+        'registration': 'By federation invitation; observers welcomed on registration in advance.',
+    },
+    {
+        'date_display': '3–5 April MMXXVII',
+        'location': 'Vienna, Austria',
+        'sanction': 'Ratified Variant · Three-Hand World Championship',
+        'title': 'The Three-Hand World Championship',
+        'description': (
+            'The senior recurring competition of the three-hand variant, '
+            'contested triennially at the Hofburg Congress Centre. The '
+            'Championship is the only sanctioned event at which the deal '
+            'rotates by the full Viennese protocol.'
+        ),
+        'registration': 'By national federation nomination, ratified by the Variant Sub-Committee.',
+    },
+    {
+        'date_display': '4–7 May MMXXVII',
+        'location': 'The Hague, the Netherlands',
+        'sanction': 'Convocation · Triennial Congress',
+        'title': 'The Council of Federations Triennial Congress',
+        'description': (
+            'The senior deliberative assembly of the Association, convened '
+            'every third year at Suckling House for the consideration of '
+            'amendments to the standing bylaws, the receipt of the '
+            'Director&rsquo;s reports, and such other business as the Council '
+            'shall by motion entertain.'
+        ),
+        'registration': 'Delegations by national federation. Observers admitted by application to the Office of the Director.',
+    },
+]
+
+
 def events(request):
-    return render(request, 'cribbage/events.html')
+    return render(request, 'cribbage/events.html', {'events': EVENTS})
 
 
 def membership_apply(request):
@@ -209,5 +413,17 @@ def scoring_calculator(request):
     return render(request, 'cribbage/scoring_calculator.html')
 
 
+@require_http_methods(["GET", "POST"])
 def contact(request):
+    if request.method == 'POST':
+        # The Director's correspondence is in fact never delivered; the
+        # reference number is generated at random and the message is silently
+        # discarded. This is in keeping with the standing policy.
+        name = request.POST.get('name', '').strip()
+        message = request.POST.get('message', '').strip()
+        if name and message:
+            reference = f"ICA-{random.randint(100000, 999999)}-COR"
+            return render(request, 'cribbage/contact_received.html', {
+                'reference': reference,
+            })
     return render(request, 'cribbage/contact.html')

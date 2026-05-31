@@ -1,0 +1,59 @@
+{% extends 'cribbage/base.html' %}
+
+{% block title %}Correspondence Received &mdash; ICA{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <div class="container">
+        <h1>Correspondence Received</h1>
+        <p class="page-header__lede">
+            Your message has been despatched directly to the Director&rsquo;s
+            personal inbox.
+        </p>
+    </div>
+</section>
+
+<section class="page-body">
+    <div class="container container--narrow">
+
+        <div class="ornament" aria-hidden="true">
+            <span class="ornament__mark">&#10086;</span>
+        </div>
+
+        <p style="text-align: center; font-size: 1.05rem;">
+            Your correspondence has been received by the Office of the
+            Executive Director and entered into the standing register under
+            the reference number
+        </p>
+
+        <p style="text-align: center; font-family: var(--font-display); font-size: 1.4rem; letter-spacing: 0.12em; color: var(--color-oxblood); margin: 1.5rem 0;">
+            {{ reference }}
+        </p>
+
+        <p style="text-align: center;">
+            The Director receives many such correspondences in a given week
+            and reviews each personally. Please allow <strong>six to eight
+            weeks</strong> for a considered response. Should the Director
+            judge that the matter falls within the competence of another
+            office of the Association, your correspondence will be
+            forwarded with the Director&rsquo;s endorsement.
+        </p>
+
+        <div class="ornament" aria-hidden="true">
+            <span class="ornament__mark">&#10086;</span>
+        </div>
+
+        <p class="bylaws-preamble">
+            <em>The Director&rsquo;s response, when it issues, will be sent
+            on the letterhead of the Office of the Executive Director and
+            will be signed in the Director&rsquo;s own hand. Communications
+            purporting to issue from the Director&rsquo;s office but not so
+            signed should be regarded as unauthorised.</em>
+        </p>
+
+        <p style="text-align: center; margin-top: 2rem;">
+            <a href="{% url 'home' %}" class="btn btn--ghost">Return to the Home Page</a>
+        </p>
+    </div>
+</section>
+{% endblock %}

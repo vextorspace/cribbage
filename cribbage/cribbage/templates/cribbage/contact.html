@@ -1,41 +1,89 @@
 {% extends 'cribbage/base.html' %}
 
-{% block title %}Correspondence with the Association &mdash; ICA{% endblock %}
+{% block title %}Correspondence with the Director &mdash; ICA{% endblock %}
 
 {% block content %}
 <section class="page-header">
     <div class="container">
-        <h1>Correspondence with the Association</h1>
+        <h1>Correspondence with the Director</h1>
         <p class="page-header__lede">
-            All correspondence addressed to the Secretariat is read by the
-            Director's chief of staff and routed to the appropriate office.
+            All correspondence addressed to the Association is read personally
+            by the Executive Director.
         </p>
     </div>
 </section>
 
 <section class="page-body">
     <div class="container container--narrow">
-        <h2>By Post</h2>
-        <address>
-            International Cribbage Association<br>
-            Suckling House<br>
-            Lange Voorhout 14<br>
-            2514 EA The Hague<br>
-            Kingdom of the Netherlands
-        </address>
 
-        <h2>By Electronic Despatch</h2>
-        <ul>
-            <li><a href="mailto:secretariat@internationalcribbageassociation.org">Secretariat (general enquiries)</a></li>
-            <li><a href="mailto:tribunal@internationalcribbageassociation.org">Office of the Tribunal</a></li>
-            <li><a href="mailto:press@internationalcribbageassociation.org">Press &amp; Media</a></li>
-            <li><a href="mailto:membership@internationalcribbageassociation.org">Membership Committee</a></li>
-        </ul>
+        <h2 class="section-heading">By Electronic Despatch</h2>
+        <p style="text-align: center; font-size: 1.2rem;">
+            <a href="mailto:pat@internationalcribbageassociation.org">pat@internationalcribbageassociation.org</a>
+        </p>
 
-        <p class="placeholder-note">
-            The Association does not, as a matter of standing policy, respond to
-            unsolicited correspondence concerning the affairs of individual
-            members or to matters presently before the Tribunal.
+        <div class="ornament" aria-hidden="true">
+            <span class="ornament__mark">&#10086;</span>
+        </div>
+
+        <h2 class="section-heading">Or by the Standing Correspondence Form</h2>
+        <p class="section-lede">
+            The form below despatches correspondence directly to the
+            Director&rsquo;s personal inbox. Allow six to eight weeks for a
+            considered response.
+        </p>
+
+        <form method="post" class="contact-form" action="">
+            {% csrf_token %}
+
+            <div class="contact-form__field">
+                <label for="name">Full name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="contact-form__field">
+                <label for="federation">National federation affiliation <span class="contact-form__optional">(optional)</span></label>
+                <input type="text" id="federation" name="federation">
+            </div>
+
+            <div class="contact-form__field">
+                <label for="email">Return e-mail address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="contact-form__field">
+                <label for="subject">Subject of correspondence</label>
+                <select id="subject" name="subject">
+                    <option>General enquiry</option>
+                    <option>Tribunal correspondence</option>
+                    <option>Press &amp; Media</option>
+                    <option>Membership application</option>
+                    <option>Helicopter Doctrine delivery coordination</option>
+                    <option>Mentor-mentee correspondence</option>
+                    <option>Sector matters</option>
+                    <option>Other</option>
+                </select>
+            </div>
+
+            <div class="contact-form__field">
+                <label for="message">Message to the Director</label>
+                <textarea id="message" name="message" rows="8" required></textarea>
+            </div>
+
+            <div class="contact-form__actions">
+                <button type="submit" class="btn btn--primary">Despatch to the Director</button>
+            </div>
+        </form>
+
+        <div class="ornament" aria-hidden="true">
+            <span class="ornament__mark">&#10086;</span>
+        </div>
+
+        <p class="bylaws-preamble">
+            <em>The Director does not, as a matter of standing policy, respond
+            to unsolicited correspondence concerning the affairs of individual
+            members or to matters presently before the Tribunal. The form
+            above is not a substitute for the procedures provided in the
+            standing bylaws.</em>
         </p>
     </div>
 </section>

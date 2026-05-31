@@ -7,19 +7,55 @@
     <div class="container">
         <h1>Sanctioned Events</h1>
         <p class="page-header__lede">
-            The Association's calendar of championship, continental, national, and
-            qualifying tournaments. Registration is administered by the respective
-            national federations.
+            The Association&rsquo;s calendar of championship, continental,
+            sector, and variant competitions, presently confirmed for the
+            forthcoming season and the year following.
         </p>
     </div>
 </section>
 
 <section class="page-body">
     <div class="container">
-        <p class="placeholder-note">
-            The Secretariat is presently confirming dates and venues for the
-            forthcoming season. The complete calendar will appear here following
-            ratification by the Council of Federations.
+
+        <p class="bylaws-preamble">
+            <em>Registration to all sanctioned events is administered by
+            the player&rsquo;s national federation in accordance with the
+            standing bylaws. Direct enquiry to the Secretariat is
+            discouraged.</em>
+        </p>
+
+        <div class="ornament" aria-hidden="true">
+            <span class="ornament__mark">&#10086;</span>
+        </div>
+
+        <div class="event-list">
+            {% for event in events %}
+            <article class="event">
+                <div class="event__date">
+                    <span class="small-caps gilt">{{ event.sanction|safe }}</span>
+                    <span class="event__date-text">{{ event.date_display|safe }}</span>
+                </div>
+                <div class="event__body">
+                    <h2 class="event__title">{{ event.title|safe }}</h2>
+                    <p class="event__location small-caps">{{ event.location|safe }}</p>
+                    <p class="event__description">{{ event.description|safe }}</p>
+                    <p class="event__registration">
+                        <strong>Registration:</strong> {{ event.registration|safe }}
+                    </p>
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+
+        <div class="ornament" aria-hidden="true">
+            <span class="ornament__mark">&#10086;</span>
+        </div>
+
+        <p class="bylaws-preamble">
+            <em>Further events will be announced through the present register
+            as they are ratified by the Council of Federations. The
+            Secretariat will not, as a matter of standing policy, confirm
+            rumoured engagements in advance of ratification.</em>
         </p>
     </div>
 </section>
