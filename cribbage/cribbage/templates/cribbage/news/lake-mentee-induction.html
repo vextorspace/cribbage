@@ -1,4 +1,5 @@
 {% extends 'cribbage/base.html' %}
+{% load static %}
 
 {% block title %}Lake Inducted as Cullen&rsquo;s First Sanctioned Mentee &mdash; ICA{% endblock %}
 
@@ -45,6 +46,17 @@
             in his Saturday remarks as &ldquo;a sense of historical
             occasion.&rdquo;
         </p>
+
+        <figure class="news-article__figure">
+            <img src="{% static 'cribbage/images/register/lake-official-portrait-monalicia.jpg' %}"
+                 alt="An oil portrait of Ms. Lake in the manner of the Mona Lisa, holding a hand of cribbage with a board before her.">
+            <figcaption>
+                Ms. Lake in the standing official portrait; oil on canvas,
+                anonymous, commissioned MMXXIV. <em>Reproduced here to
+                acquaint the present reader with the mentee whom the
+                Sector designated in MMXVIII.</em>
+            </figcaption>
+        </figure>
 
         <p>
             &ldquo;The talent is there, plainly,&rdquo; Mr. Cullen told the

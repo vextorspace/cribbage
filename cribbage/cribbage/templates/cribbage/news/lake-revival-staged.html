@@ -1,4 +1,5 @@
 {% extends 'cribbage/base.html' %}
+{% load static %}
 
 {% block title %}Lake&rsquo;s Dead-Horse Revival Now Believed Staged &mdash; ICA{% endblock %}
 
@@ -79,6 +80,29 @@
             archive of the Suckling House Secretariat at the request of the
             Office of the Director.
         </p>
+
+        <figure class="news-article__figure">
+            <img src="{% static 'cribbage/images/register/lake-divine-portrait-iwcca.jpg' %}"
+                 alt="An oil painting of Ms. Lake in a divine pose, in the Sistine manner.">
+            <figcaption>
+                The IWCCA&rsquo;s commissioned portrait of Ms. Lake in the
+                (figurative) divine pose; oil on canvas, MMXXV. <em>Presently
+                relocated to the basement archive of the Suckling House
+                Secretariat.</em>
+            </figcaption>
+        </figure>
+
+        <figure class="news-article__figure">
+            <img src="{% static 'cribbage/images/register/lake-portrait-alternative-take.jpg' %}"
+                 alt="An alternative attribution of the same composition, with the subject's attitude markedly altered.">
+            <figcaption>
+                An alternative attribution of the same composition,
+                submitted to the Office of the Director by Mr. Ronne in
+                correspondence of January MMXXVI. <em>The Director has
+                reserved the question of accession pending the resolution
+                of the principal proceedings.</em>
+            </figcaption>
+        </figure>
 
         <p>
             Counsel for Mr. Cullen and Ms. Lake declined comment in advance

@@ -6,6 +6,67 @@ documentation" for the site. The files live in `evidence/` (gitignored) — copy
 `cribbage/static/cribbage/images/` (renamed for clarity) before referencing them in
 templates.
 
+## Working reference: static files → bulletin assignments
+
+The table below is the day-to-day lookup when adding images to a news bulletin.
+It indexes the files **as they exist in `static/cribbage/images/`** (not by their
+WhatsApp source names) and points each to the bulletin slug(s) where it would
+naturally appear, with a short in-universe gloss for the caption.
+
+The "source catalog" sections further down still hold the original chat context
+and are the right place to look when adding *new* images from `evidence/`.
+
+### Primary bulletin assignments (strong one-to-one matches)
+
+| Static file | Bulletin slug | One-line in-universe gloss |
+| --- | --- | --- |
+| `register/lake-washington-state-finals-perfect-29.jpg` | `lake-perfect-29-washington` | Ms. Lake at the closing leg of the Washington State Finals; the eighth sanctioned twenty-nine of her career. |
+| `register/lake-huge-gesture-bulletin.jpg` | `lake-perfect-29-washington` (companion / morning-after) | Ms. Lake at the close of a substantial gesture undertaken the morning following the Finals; particulars known only to the Sector Secretariat. |
+| `register/ronne-on-tender-maintenance.jpg` | `ronne-2025-title-confirmed` | Mr. Ronne in the main cabin of the Cullen family tender, mid-overhaul; the wrench held aloft by tradition. |
+| `register/bahamian-engagement-at-sunset.jpg` | `ronne-2025-title-confirmed` (atmospheric) | A sanctioned vessel of the Cullen family at sunset; the Convening Rule was, at this hour, in force. |
+| `register/cullen-hall-of-champion-portrait.jpg` | `thornenberg-suspensions` or `ronne-2025-title-confirmed` | Mr. Cullen's IWCCA Hall of Champion portrait, presently tarpaulined at Council recommendation. |
+| `register/lake-divine-portrait-iwcca.jpg` | `lake-revival-staged` | Ms. Lake in the (figurative) divine pose; oil on canvas, IWCCA commission, MMXXV. |
+| `register/lake-portrait-alternative-take.jpg` | `lake-revival-staged` (counter-evidence) | The alternative attribution of the divine composition, submitted to the Office of the Director by Mr. Ronne. |
+| `register/equine-cousin-roadside.jpg` | `tribunal-opens-equine-inquiry` or `veterinary-linguist-thirty-one` | An equine cousin of the present proceedings, photographed roadside in the Eleuthera district; no standing in any sanctioned engagement. |
+| `tribunal-exhibits/exhibit-014-a.jpg` … `-e.jpg` | `tribunal-opens-equine-inquiry`, `lake-revival-staged`, `veterinary-linguist-thirty-one` (cite as evidence) | Photographic evidence of unsanctioned equine engagements; full series catalogued on the Tribunal Exhibits page. |
+
+### Secondary / multi-bulletin candidates
+
+| Static file | Candidate bulletin slug(s) | One-line in-universe gloss |
+| --- | --- | --- |
+| `register/lake-official-portrait-monalicia.jpg` | `lake-mentee-induction`, `cullen-lake-masters-dubai`, `lake-revival-staged` | Ms. Lake's standing official portrait ("Monalicia"); oil on canvas, anonymous, MMXXIV. |
+| `register/cullen-africa-order-of-canada.jpg` | future "Exit Strategy" bulletin; or `thornenberg-suspensions` (contextual) | Mr. Cullen on East African sabbatical, decorated with what Ms. Lake identified at the time as the Order of Canada. |
+| `register/cullen-engagement-january-mmxxvi-a.jpg` | `cullen-lake-masters-dubai` (era-adjacent) or archive | Mr. Cullen at a sanctioned engagement, January MMXXVI. From the Secretariat archive. |
+| `register/cullen-engagement-january-mmxxvi-b.jpg` | as above (companion frame) | Mr. Cullen at a sanctioned engagement, January MMXXVI. From the Secretariat archive. |
+| `register/champion-nutritional-supplement.jpg` | `lake-perfect-29-washington` or `tarbish-tournament-lake` (champion-lifestyle aside) | The Association's standing nutritional supplement for sanctioned champions; composition presently undisclosed. |
+
+### Atmospheric / archive-only (no bulletin assignment yet)
+
+| Static file | Suggested home | One-line in-universe gloss |
+| --- | --- | --- |
+| `register/bahamian-engagement-kayak.jpg` | Photographic Register only | A member of the Spanish Wells expedition party at the eastern cays; identification not yet settled by the archivist. |
+| `register/bahamian-engagement-grotto.jpg` | Photographic Register only | A member of the Bahamian expedition party at the eastern grotto; identification, again, unsettled. |
+| `register/cullen-holiday-greeting-mmxxv.jpg` | Photographic Register / future seasonal bulletin | Mr. Cullen's annual seasonal greeting to the federated game, MMXXV. |
+| `register/katrina-tim-cribbage-board-donation.jpg` | future Donors / Patrons page | The inlaid rosewood cribbage board donated by Patrons Katrina and Tim; peg holes positioned by tradition. |
+
+### Already placed in a bulletin
+
+| Static file | Placed in | Notes |
+| --- | --- | --- |
+| `spanish-wells-cullen-portrait.jpg` | `cullen-spanish-wells-pigs` | First of three figures in the bulletin. |
+| `spanish-wells-cullen-volunteer.jpg` | `cullen-spanish-wells-pigs` | Second figure. |
+| `spanish-wells-lake-visit.jpg` | `cullen-spanish-wells-pigs` | Third figure. |
+
+### Bulletins with no image candidate at present
+
+The following bulletins have no obvious match in the current `static/` set and
+will either need a generic atmospheric asset (committee chamber, gavel, tournament
+hall) or can stand without imagery: `cullen-level-1-toronto`,
+`cullen-level-3-helsinki`, `cullen-uganda-tiny-homes`, `lake-trudeau-rcmp-ruling`,
+`tarbish-tournament-lake`.
+
+
+
 Confirmed viewed (representative):
 
 - **"Monalicia"** — Alicia Lake's face on a Mona Lisa-style oil painting, holding a

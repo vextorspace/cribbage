@@ -1,4 +1,5 @@
 {% extends 'cribbage/base.html' %}
+{% load static %}
 
 {% block title %}Lake Wins Washington State Finals with Perfect Twenty-Nine &mdash; ICA{% endblock %}
 
@@ -32,6 +33,16 @@
             its closing minute, &ldquo;extended a record already without
             parallel in the present generation of the federated game.&rdquo;
         </p>
+
+        <figure class="news-article__figure">
+            <img src="{% static 'cribbage/images/register/lake-washington-state-finals-perfect-29.jpg' %}"
+                 alt="Ms. Lake at the playing table, the closing hand laid out for the count.">
+            <figcaption>
+                Ms. Lake at the closing leg of the Washington State Finals.
+                The eighth sanctioned twenty-nine of her career. <em>Photograph
+                from the Sector Secretariat.</em>
+            </figcaption>
+        </figure>
 
         <p>
             The closing hand was three Fives and the Jack of clubs, with

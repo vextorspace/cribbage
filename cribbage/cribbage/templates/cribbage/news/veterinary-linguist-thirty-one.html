@@ -1,4 +1,5 @@
 {% extends 'cribbage/base.html' %}
+{% load static %}
 
 {% block title %}Veterinary Linguist Confirms Horses Cannot Pronounce &ldquo;Thirty-One&rdquo; &mdash; ICA{% endblock %}
 
@@ -60,6 +61,18 @@
             transcription of the closest equine approximation, which the
             Secretariat has declined to publish in the present register.
         </p>
+
+        <figure class="news-article__figure">
+            <img src="{% static 'cribbage/images/register/equine-cousin-roadside.jpg' %}"
+                 alt="A wild donkey standing at the roadside in tropical scrub.">
+            <figcaption>
+                An equine cousin of the present proceedings, photographed at
+                the roadside in the Eleuthera district. The Tribunal observes
+                that the subject is without standing in any sanctioned
+                engagement and is unable, on Professor Eikenboom&rsquo;s
+                findings, to announce the running count above three.
+            </figcaption>
+        </figure>
 
         <p>
             The implications for the inquiry under Case ICA-T-2026-014 are
